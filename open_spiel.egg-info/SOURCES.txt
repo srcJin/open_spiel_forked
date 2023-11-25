@@ -1408,6 +1408,9 @@ open_spiel/games/morpion_solitaire/morpion_solitaire_test.cc
 open_spiel/games/negotiation/negotiation.cc
 open_spiel/games/negotiation/negotiation.h
 open_spiel/games/negotiation/negotiation_test.cc
+open_spiel/games/negotiation_city/negotiation_city.cc
+open_spiel/games/negotiation_city/negotiation_city.h
+open_spiel/games/negotiation_city/negotiation_city_test.cc
 open_spiel/games/nfg_game/nfg_game.cc
 open_spiel/games/nfg_game/nfg_game.h
 open_spiel/games/nfg_game/nfg_game_test.cc
@@ -2046,6 +2049,8 @@ open_spiel/python/pybind11/games_leduc_poker.cc
 open_spiel/python/pybind11/games_leduc_poker.h
 open_spiel/python/pybind11/games_negotiation.cc
 open_spiel/python/pybind11/games_negotiation.h
+open_spiel/python/pybind11/games_negotiation_city.cc
+open_spiel/python/pybind11/games_negotiation_city.h
 open_spiel/python/pybind11/games_tarok.cc
 open_spiel/python/pybind11/games_tarok.h
 open_spiel/python/pybind11/games_tiny_bridge.cc
