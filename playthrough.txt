@@ -1,0 +1,266 @@
+Script started on 2023-11-25 12:28:38-05:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="198" LINES="20"]
+(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ command -v nvmurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Command -v nvm[K[Kcommand -v nvmurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install curl[Kgit config --global core.autocrlf false[14Psudo apt-get install curlcurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Command -v nvm[K[Kpython open_spiel/python/examples/playthrough.pyopen_spiel/python/examples/playthrough.py[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+I1125 12:29:00.873159 139900358362944 playthrough.py:68] game: kuhn_poker
+
+GameType.chance_mode = ChanceMode.EXPLICIT_STOCHASTIC
+GameType.dynamics = Dynamics.SEQUENTIAL
+GameType.information = Information.IMPERFECT_INFORMATION
+GameType.long_name = "Kuhn Poker"
+GameType.max_num_players = 10
+GameType.min_num_players = 2
+GameType.parameter_specification = ["players"]
+GameType.provides_information_state_string = True
+GameType.provides_information_state_tensor = True
+GameType.provides_observation_string = True
+GameType.provides_observation_tensor = True
+GameType.provides_factored_observation_string = True
+GameType.reward_model = RewardModel.TERMINAL
+GameType.short_name = "kuhn_poker"
+GameType.utility = Utility.ZERO_SUM
+
+NumDistinctActions() = 2
+PolicyTensorShape() = [2]
+MaxChanceOutcomes() = 3
+GetParameters() = {players=2}
+NumPlayers() = 2
+MinUtility() = -2.0
+MaxUtility() = 2.0
+UtilitySum() = 0.0
+InformationStateTensorShape() = player: [2], private_card: [3], betting: [3, 2]
+InformationStateTensorLayout() = TensorLayout.CHW
+InformationStateTensorSize() = 11
+ObservationTensorShape() = player: [2], private_card: [3], pot_contribution: [2]
+ObservationTensorLayout() = TensorLayout.CHW
+ObservationTensorSize() = 7
+MaxGameLength() = 3
+ToString() = "kuhn_poker()"
+
+# State 0
+IsTerminal() = False
+History() = []
+HistoryString() = ""
+IsChanceNode() = True
+IsSimultaneousNode() = False
+CurrentPlayer() = -1
+InformationStateString(0) = ""
+InformationStateString(1) = ""
+InformationStateTensor(0).player: ◉◯
+InformationStateTensor(0).private_card: ◯◯◯
+InformationStateTensor(0).betting: ◯◯
+                                   ◯◯
+                                   ◯◯
+InformationStateTensor(1).player: ◯◉
+InformationStateTensor(1).private_card: ◯◯◯
+InformationStateTensor(1).betting: ◯◯
+                                   ◯◯
+                                   ◯◯
+ObservationString(0) = ""
+ObservationString(1) = ""
+PublicObservationString() = "start game"
+PrivateObservationString(0) = ""
+PrivateObservationString(1) = ""
+ObservationTensor(0).player: ◉◯
+ObservationTensor(0).private_card: ◯◯◯
+ObservationTensor(0).pot_contribution: ◉◉
+ObservationTensor(1).player: ◯◉
+ObservationTensor(1).private_card: ◯◯◯
+ObservationTensor(1).pot_contribution: ◉◉
+ChanceOutcomes() = [(0,0.333333), (1,0.333333), (2,0.333333)]
+LegalActions() = [0, 1, 2]
+StringLegalActions() = ["Deal:0", "Deal:1", "Deal:2"]
+
+# Apply action "Deal:0"
+action: 0
+
+# State 1
+# 0
+IsTerminal() = False
+History() = [0]
+HistoryString() = "0"
+IsChanceNode() = True
+IsSimultaneousNode() = False
+CurrentPlayer() = -1
+InformationStateString(0) = "0"
+InformationStateString(1) = ""
+InformationStateTensor(0).player: ◉◯
+InformationStateTensor(0).private_card: ◉◯◯
+InformationStateTensor(0).betting: ◯◯
+                                   ◯◯
+                                   ◯◯
+InformationStateTensor(1).player: ◯◉
+InformationStateTensor(1).private_card: ◯◯◯
+InformationStateTensor(1).betting: ◯◯
+                                   ◯◯
+                                   ◯◯
+ObservationString(0) = "011"
+ObservationString(1) = ""
+PublicObservationString() = "Deal to player 0"
+PrivateObservationString(0) = "Received card 0"
+PrivateObservationString(1) = ""
+ObservationTensor(0).player: ◉◯
+ObservationTensor(0).private_card: ◉◯◯
+ObservationTensor(0).pot_contribution: ◉◉
+ObservationTensor(1).player: ◯◉
+ObservationTensor(1).private_card: ◯◯◯
+ObservationTensor(1).pot_contribution: ◉◉
+ChanceOutcomes() = [(1,0.5), (2,0.5)]
+LegalActions() = [1, 2]
+StringLegalActions() = ["Deal:1", "Deal:2"]
+
+# Apply action "Deal:1"
+action: 1
+
+# State 2
+# 0 1
+IsTerminal() = False
+History() = [0, 1]
+HistoryString() = "0, 1"
+IsChanceNode() = False
+IsSimultaneousNode() = False
+CurrentPlayer() = 0
+InformationStateString(0) = "0"
+InformationStateString(1) = "1"
+InformationStateTensor(0).player: ◉◯
+InformationStateTensor(0).private_card: ◉◯◯
+InformationStateTensor(0).betting: ◯◯
+                                   ◯◯
+                                   ◯◯
+InformationStateTensor(1).player: ◯◉
+InformationStateTensor(1).private_card: ◯◉◯
+InformationStateTensor(1).betting: ◯◯
+                                   ◯◯
+                                   ◯◯
+ObservationString(0) = "011"
+ObservationString(1) = "111"
+PublicObservationString() = "Deal to player 1"
+PrivateObservationString(0) = ""
+PrivateObservationString(1) = "Received card 1"
+ObservationTensor(0).player: ◉◯
+ObservationTensor(0).private_card: ◉◯◯
+ObservationTensor(0).pot_contribution: ◉◉
+ObservationTensor(1).player: ◯◉
+ObservationTensor(1).private_card: ◯◉◯
+ObservationTensor(1).pot_contribution: ◉◉
+Rewards() = [0, 0]
+Returns() = [0, 0]
+LegalActions() = [0, 1]
+StringLegalActions() = ["Pass", "Bet"]
+
+# Apply action "Pass"
+action: 0
+
+# State 3
+# 0 1 p
+IsTerminal() = False
+History() = [0, 1, 0]
+HistoryString() = "0, 1, 0"
+IsChanceNode() = False
+IsSimultaneousNode() = False
+CurrentPlayer() = 1
+InformationStateString(0) = "0p"
+InformationStateString(1) = "1p"
+InformationStateTensor(0).player: ◉◯
+InformationStateTensor(0).private_card: ◉◯◯
+InformationStateTensor(0).betting: ◉◯
+                                   ◯◯
+                                   ◯◯
+InformationStateTensor(1).player: ◯◉
+InformationStateTensor(1).private_card: ◯◉◯
+InformationStateTensor(1).betting: ◉◯
+                                   ◯◯
+                                   ◯◯
+ObservationString(0) = "011"
+ObservationString(1) = "111"
+PublicObservationString() = "Pass"
+PrivateObservationString(0) = ""
+PrivateObservationString(1) = ""
+ObservationTensor(0).player: ◉◯
+ObservationTensor(0).private_card: ◉◯◯
+ObservationTensor(0).pot_contribution: ◉◉
+ObservationTensor(1).player: ◯◉
+ObservationTensor(1).private_card: ◯◉◯
+ObservationTensor(1).pot_contribution: ◉◉
+Rewards() = [0, 0]
+Returns() = [0, 0]
+LegalActions() = [0, 1]
+StringLegalActions() = ["Pass", "Bet"]
+
+# Apply action "Bet"
+action: 1
+
+# State 4
+# 0 1 pb
+IsTerminal() = False
+History() = [0, 1, 0, 1]
+HistoryString() = "0, 1, 0, 1"
+IsChanceNode() = False
+IsSimultaneousNode() = False
+CurrentPlayer() = 0
+InformationStateString(0) = "0pb"
+InformationStateString(1) = "1pb"
+InformationStateTensor(0).player: ◉◯
+InformationStateTensor(0).private_card: ◉◯◯
+InformationStateTensor(0).betting: ◉◯
+                                   ◯◉
+                                   ◯◯
+InformationStateTensor(1).player: ◯◉
+InformationStateTensor(1).private_card: ◯◉◯
+InformationStateTensor(1).betting: ◉◯
+                                   ◯◉
+                                   ◯◯
+ObservationString(0) = "012"
+ObservationString(1) = "112"
+PublicObservationString() = "Bet"
+PrivateObservationString(0) = ""
+PrivateObservationString(1) = ""
+ObservationTensor(0).player: ◉◯
+ObservationTensor(0).private_card: ◉◯◯
+ObservationTensor(0).pot_contribution = [1.0, 2.0]
+ObservationTensor(1).player: ◯◉
+ObservationTensor(1).private_card: ◯◉◯
+ObservationTensor(1).pot_contribution = [1.0, 2.0]
+Rewards() = [0, 0]
+Returns() = [0, 0]
+LegalActions() = [0, 1]
+StringLegalActions() = ["Pass", "Bet"]
+
+# Apply action "Pass"
+action: 0
+
+# State 5
+# 0 1 pbp
+IsTerminal() = True
+History() = [0, 1, 0, 1, 0]
+HistoryString() = "0, 1, 0, 1, 0"
+IsChanceNode() = False
+IsSimultaneousNode() = False
+CurrentPlayer() = -4
+InformationStateString(0) = "0pbp"
+InformationStateString(1) = "1pbp"
+InformationStateTensor(0).player: ◉◯
+InformationStateTensor(0).private_card: ◉◯◯
+InformationStateTensor(0).betting: ◉◯
+                                   ◯◉
+                                   ◉◯
+InformationStateTensor(1).player: ◯◉
+InformationStateTensor(1).private_card: ◯◉◯
+InformationStateTensor(1).betting: ◉◯
+                                   ◯◉
+                                   ◉◯
+ObservationString(0) = "012"
+ObservationString(1) = "112"
+PublicObservationString() = "Pass"
+PrivateObservationString(0) = ""
+PrivateObservationString(1) = ""
+ObservationTensor(0).player: ◉◯
+ObservationTensor(0).private_card: ◉◯◯
+ObservationTensor(0).pot_contribution = [1.0, 2.0]
+ObservationTensor(1).player: ◯◉
+ObservationTensor(1).private_card: ◯◉◯
+ObservationTensor(1).pot_contribution = [1.0, 2.0]
+Rewards() = [-1, 1]
+Returns() = [-1, 1]
+
+(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ exit
+
+Script done on 2023-11-25 12:29:56-05:00 [COMMAND_EXIT_CODE="0"]

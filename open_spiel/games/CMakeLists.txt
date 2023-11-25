@@ -123,6 +123,8 @@ set(GAME_SOURCES
   morpion_solitaire/morpion_solitaire.h
   negotiation/negotiation.cc
   negotiation/negotiation.h
+  negotiation_city/negotiation_city.cc
+  negotiation_city/negotiation_city.h
   nfg_game/nfg_game.cc
   nfg_game/nfg_game.h
   nine_mens_morris/nine_mens_morris.cc

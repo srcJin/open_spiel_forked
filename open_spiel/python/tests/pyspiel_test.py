@@ -92,6 +92,7 @@ EXPECTED_GAMES = frozenset([
     "misere",
     "morpion_solitaire",
     "negotiation",
+    "negotiation_city",
     "nfg_game",
     "nim",
     "nine_mens_morris",
