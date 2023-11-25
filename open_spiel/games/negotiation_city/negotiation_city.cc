@@ -21,29 +21,36 @@
 #include <random>
 #include <utility>
 
-#include "open_spiel/abseil-cpp/absl/random/poisson_distribution.h"
-#include "open_spiel/abseil-cpp/absl/random/uniform_int_distribution.h"
-#include "open_spiel/abseil-cpp/absl/strings/str_cat.h"
-#include "open_spiel/abseil-cpp/absl/strings/str_join.h"
-#include "open_spiel/abseil-cpp/absl/strings/str_split.h"
-#include "open_spiel/spiel.h"
-#include "open_spiel/spiel_utils.h"
+#include "open_spiel/abseil-cpp/absl/random/poisson_distribution.h" // 引入泊松分布
+#include "open_spiel/abseil-cpp/absl/random/uniform_int_distribution.h" // 引入均匀整数分布
+#include "open_spiel/abseil-cpp/absl/strings/str_cat.h" // 引入字符串连接功能
+#include "open_spiel/abseil-cpp/absl/strings/str_join.h" // 引入字符串连接功能
+#include "open_spiel/abseil-cpp/absl/strings/str_split.h" // 引入字符串分割功能
+#include "open_spiel/spiel.h" // 引入OpenSpiel框架
+#include "open_spiel/spiel_utils.h" // 引入OpenSpiel实用工具
 
+// 包含 OpenSpiel 框架的一些核心库文件，用于处理字符串、概率分布和游戏逻辑等。
 namespace open_spiel {
 namespace negotiation_city {
 
+// 声明命名空间 open_spiel 和子命名空间 negotiation_city，代码的主体部分将在这些命名空间内定义。
+
 namespace {
 
-// Facts about the game
+// 匿名命名空间，用于内部实现，限制其作用域仅在当前文件中。
+
+// Facts about the game  
+// 定义游戏类型的基本属性，如游戏名称、动态类型、玩家数量等。此外，还定义了游戏的参数。
+
 const GameType kGameType{
     /*short_name=*/"negotiation_city",
     /*long_name=*/"Negotiation_city",
-    GameType::Dynamics::kSequential,
-    GameType::ChanceMode::kSampledStochastic,
-    GameType::Information::kImperfectInformation,
-    GameType::Utility::kGeneralSum,
-    GameType::RewardModel::kTerminal,
-    /*max_num_players=*/2,
+    GameType::Dynamics::kSequential,   // 顺序动态
+    GameType::ChanceMode::kSampledStochastic,  // 抽样随机
+    GameType::Information::kImperfectInformation,  // 非完全信息
+    GameType::Utility::kGeneralSum,   // 总和效用
+    GameType::RewardModel::kTerminal,  // 终端奖励
+    /*max_num_players=*/2, // Jin: added the player numbers
     /*min_num_players=*/2,
     /*provides_information_state_string=*/false,
     /*provides_information_state_tensor=*/false,
@@ -61,6 +68,7 @@ static std::shared_ptr<const Game> Factory(const GameParameters& params) {
   return std::shared_ptr<const Game>(new NegotiationCityGame(params));
 }
 
+// Factory 函数用于根据给定的参数创建一个新的游戏实例。
 REGISTER_SPIEL_GAME(kGameType, Factory);
 
 RegisterSingleTensorObserver single_tensor(kGameType.short_name);
@@ -69,9 +77,9 @@ std::string TurnTypeToString(TurnType turn_type) {
   if (turn_type == TurnType::kProposal) {
     return "Proposal";
   } else if (turn_type == TurnType::kUtterance) {
-    return "Utterance";
+    return "Utterance";  // Utterance: 发言
   } else {
-    SpielFatalError("Unrecognized turn type");
+    SpielFatalError("Unrecognized turn type");  // 未识别的回合类型错误
   }
 }
 }  // namespace
@@ -79,19 +87,19 @@ std::string TurnTypeToString(TurnType turn_type) {
 std::string NegotiationCityState::ActionToString(Player player,
                                              Action move_id) const {
   if (player == kChancePlayerId) {
-    return absl::StrCat("chance outcome ", move_id);
+    return absl::StrCat("chance outcome ", move_id);  // 概率节点的动作
   } else {
     std::string action_string = "";
     if (turn_type_ == TurnType::kProposal) {
       if (move_id == parent_game_.NumDistinctProposals() - 1) {
-        absl::StrAppend(&action_string, "Proposal: Agreement reached!");
+        absl::StrAppend(&action_string, "Proposal: Agreement reached!");  // 提案：达成协议
       } else {
-        std::vector<int> proposal = DecodeProposal(move_id);
+        std::vector<int> proposal = DecodeProposal(move_id);  // 解码提案
         std::string prop_str = absl::StrJoin(proposal, ", ");
         absl::StrAppend(&action_string, "Proposal: [", prop_str, "]");
       }
     } else {
-      std::vector<int> utterance = DecodeUtterance(move_id);
+      std::vector<int> utterance = DecodeUtterance(move_id);  // 解码话语
       std::string utt_str = absl::StrJoin(utterance, ", ");
       absl::StrAppend(&action_string, ", Utterance: [", utt_str, "]");
     }
@@ -102,6 +110,8 @@ std::string NegotiationCityState::ActionToString(Player player,
 bool NegotiationCityState::IsTerminal() const {
   // If utterances are enabled, force the agent to utter something even when
   // they accept the proposal or run out of steps (i.e. on ther last turn).
+  // 如果启用了话语，则即使在接受提案或步数耗尽时，也强制代理发表话语（即在最后一回合）。
+
   bool utterance_check =
       (enable_utterances_ ? utterances_.size() == proposals_.size() : true);
   return (agreement_reached_ || proposals_.size() >= max_steps_) &&
@@ -133,7 +143,7 @@ std::string NegotiationCityState::ObservationString(Player player) const {
   SPIEL_CHECK_LT(player, num_players_);
 
   if (IsChanceNode()) {
-    return "ChanceNode -- no observation";
+    return "ChanceNode -- no observation";  // 概率节点 - 无观察
   }
 
   std::string str = absl::StrCat("Max steps: ", max_steps_, "\n");
@@ -171,11 +181,16 @@ std::string NegotiationCityState::ObservationString(Player player) const {
 //   - Last proposal:   (num_items * (max_quantity + 1) bits)
 // If utterances are enabled, another:
 //   - Last utterance:  (utterance_dim * num_symbols) bits)
+
+// 观察张量的构造，用于表示游戏的当前状态。
+
 std::vector<int> NegotiationCityGame::ObservationTensorShape() const {
   return {kNumPlayers + 2 + 2 + (num_items_ * (kMaxQuantity + 1)) +
           (num_items_ * (kMaxValue + 1)) + (num_items_ * (kMaxQuantity + 1)) +
           (enable_utterances_ ? utterance_dim_ * num_symbols_ : 0)};
 }
+
+// 以下代码均为游戏的核心逻辑
 
 void NegotiationCityState::ObservationTensor(Player player,
                                          absl::Span<float> values) const {
@@ -186,6 +201,8 @@ void NegotiationCityState::ObservationTensor(Player player,
   std::fill(values.begin(), values.end(), 0);
 
   // No observations at chance nodes.
+  // 概率节点无观察。
+
   if (IsChanceNode()) {
     return;
   }
@@ -201,14 +218,17 @@ void NegotiationCityState::ObservationTensor(Player player,
   // If utterances are enabled, another:
   //   - Last utterance:  (utterance_dim * num_symbols) bits)
 
-  // Current player.
+  // 观察张量的维度包括：当前玩家、回合类型、终端状态、物品池、个人效用、最后提案。
+  // 如果启用了话语，还包括最后的话语。
+
+  // Current player. // 当前玩家。
   int offset = 0;
   if (!IsTerminal()) {
     values[offset + CurrentPlayer()] = 1;
   }
   offset += kNumPlayers;
 
-  // Current turn type.
+  // Current turn type.   // 当前回合类型。
   if (turn_type_ == TurnType::kProposal) {
     values[offset] = 1;
   } else {
@@ -216,7 +236,7 @@ void NegotiationCityState::ObservationTensor(Player player,
   }
   offset += 2;
 
-  // Terminal status: 2 bits
+  // Terminal status: 2 bits   // 终端状态：2位
   values[offset] = IsTerminal() ? 1 : 0;
   values[offset + 1] = agreement_reached_ ? 1 : 0;
   offset += 2;

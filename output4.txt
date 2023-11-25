@@ -1,0 +1,2176 @@
+Script started on 2023-11-25 17:12:31-05:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="97" LINES="56"]
+(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ ./open_spiel/scripts/build_and_run_tests.shpython open_spiel/python/examples/playthrough.py[A(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ command -v nvm[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython open_spiel/python/examples/playthrough.py[A(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ [3P./open_spiel/scripts/build_and_run_tests.sh
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K./open_spiel/scripts/build_and_run_tests.sh
+[33mRunning ./open_spiel/scripts/build_and_run_tests.sh from /home/jin/code/open_spiel_forked[0m
+[1m[93mVirtualenv already detected. We do not create a new one.[0m
+[33mSkipping installation of requirements.txt.[0m
+Building and testing in /home/jin/code/open_spiel_forked/build using 'python' (version 3.8.10).
+[0m[1;33mCurrent build type is: Testing[m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_ACPC: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_EIGEN: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_GO: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_HANABI: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_HIGC: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_JULIA: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_LIBNOP: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_LIBTORCH: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_TENSORFLOW_CC: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_PYTHON: ON [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_XINXIN: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_ROSHAMBO: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_GAMUT: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_ORTOOLS: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_BUILD_WITH_RUST: OFF [m[0m
+[0m[1;33mOPEN_SPIEL_ENABLE_JAX: AUTO [m[0m
+[0m[1;33mOPEN_SPIEL_ENABLE_PYTORCH: AUTO [m[0m
+[0m[1;33mOPEN_SPIEL_ENABLE_TENSORFLOW: AUTO [m[0m
+[0m[1;33mOPEN_SPIEL_ENABLE_PYTHON_MISC: OFF [m[0m
+[0m[1;31mOPEN_SPIEL_BUILDING_WHEEL not set. Defaults to OFF[m[0m
+[0m[1;33mOPEN_SPIEL_BUILDING_WHEEL: OFF [m[0m
+[0mNot building wheel. Finding Python normally...[0m
+[0mPython executable: /home/jin/code/open_spiel_forked/venv/bin/python3.8[0m
+[0mPython include dirs: /usr/include/python3.8[0m
+[0mPython library dirs: /usr/lib/x86_64-linux-gnu[0m
+[0mOPEN_SPIEL_ENABLE_JAX set to AUTO. Detecting Jax...[0m
+[0mNot found. Enable printing errors in python/CMakeLists.txt to see output.[0m
+[0mOPEN_SPIEL_ENABLE_PYTORCH set to AUTO. Detecting PyTorch...[0m
+[0mNot found. Enable printing errors in python/CMakeLists.txt to see output.[0m
+[0mOPEN_SPIEL_ENABLE_TENSORFLOW set to AUTO. Detecting Tensorflow...[0m
+[0mNot found. Enable printing errors in python/CMakeLists.txt to see output.[0m
+-- Configuring done (0.4s)
+-- Generating done (0.9s)
+-- Build files have been written to: /home/jin/code/open_spiel_forked/build
+Building project
+[  0%] Built target absl_spinlock_wait
+[  0%] Built target absl_log_severity
+[  1%] Built target absl_leak_check
+[  2%] Built target absl_strerror
+[  2%] Built target absl_flags_commandlineflag_internal
+[  3%] Built target absl_exponential_biased
+[  3%] Built target absl_civil_time
+[  3%] Built target absl_int128
+[  4%] Built target absl_log_internal_nullguard
+[  4%] Built target absl_random_seed_gen_exception
+[  4%] Built target absl_random_internal_platform
+[  4%] Built target absl_raw_logging_internal
+[  4%] Built target absl_periodic_sampler
+[  5%] Built target absl_time_zone
+[  5%] Built target absl_random_internal_randen_hwaes_impl
+[  6%] Built target absl_random_internal_randen_slow
+[  7%] Built target absl_throw_delegate
+[  7%] Built target absl_scoped_set_env
+[  7%] Built target absl_bad_any_cast_impl
+[  8%] Built target absl_bad_variant_access
+[  8%] Built target absl_bad_optional_access
+[  8%] Built target absl_random_internal_randen_hwaes
+[  9%] Built target absl_cordz_functions
+[ 10%] Built target absl_debugging_internal
+[ 10%] Built target absl_base
+[ 12%] Built target open_spiel_core
+[ 13%] Built target absl_random_internal_randen
+[ 14%] Built target absl_stacktrace
+[ 14%] Built target absl_demangle_internal
+[ 14%] Built target absl_malloc_internal
+[ 15%] Built target absl_low_level_hash
+[ 16%] Built target absl_crc_cpu_detect
+[ 16%] Built target absl_log_internal_conditions
+[ 16%] Built target absl_strings_internal
+[ 17%] Built target absl_city
+[ 17%] Built target absl_graphcycles_internal
+[ 17%] Built target absl_crc_internal
+[ 19%] Built target absl_strings
+[ 19%] Built target absl_symbolize
+[ 20%] Built target absl_flags_commandlineflag
+[ 20%] Built target absl_random_internal_seed_material
+[ 20%] Built target absl_log_internal_proto
+[ 21%] Built target absl_hash
+[ 22%] Built target absl_random_distributions
+[ 22%] Built target absl_crc32c
+[ 23%] Built target absl_time
+[ 24%] Built target absl_str_format_internal
+[ 24%] Built target absl_examine_stack
+[ 24%] Built target absl_flags_private_handle_accessor
+[ 24%] Built target absl_log_globals
+[ 24%] Built target absl_crc_cord_state
+[ 24%] Built target absl_random_internal_pool_urbg
+[ 25%] Built target absl_log_internal_globals
+[ 25%] Built target absl_log_entry
+[ 25%] Built target absl_random_internal_distribution_test_util
+[ 25%] Built target absl_failure_signal_handler
+[ 26%] Built target absl_flags_marshalling
+[ 27%] Built target absl_synchronization
+[ 27%] Built target absl_random_seed_sequences
+[ 27%] Built target absl_log_internal_format
+[ 28%] Built target absl_log_initialize
+[ 28%] Built target absl_log_sink
+[ 29%] Built target absl_cord_internal
+[ 29%] Built target absl_flags_program_name
+[ 29%] Built target absl_cordz_handle
+[ 29%] Built target absl_hashtablez_sampler
+[ 29%] Built target absl_log_internal_log_sink_set
+[ 29%] Built target absl_flags_config
+[ 29%] Built target absl_cordz_info
+[ 30%] Built target absl_raw_hash_set
+[ 30%] Built target absl_log_internal_message
+[ 30%] Built target absl_flags_internal
+[ 31%] Built target absl_cordz_sample_token
+[ 31%] Built target absl_cord
+[ 31%] Built target absl_log_internal_check_op
+[ 31%] Built target absl_die_if_null
+[ 32%] Built target absl_flags_reflection
+[ 32%] Built target absl_status
+[ 32%] Built target absl_flags
+[ 32%] Built target absl_statusor
+[ 32%] Built target absl_log_flags
+[ 32%] Built target absl_flags_usage_internal
+[ 32%] Built target absl_flags_usage
+[ 32%] Built target absl_flags_parse
+[ 32%] Built target tests
+[ 32%] Built target bots
+[ 33%] Built target utils
+[ 34%] Built target game_transforms
+[ 37%] Built target bridge_double_dummy_solver
+[ 43%] Built target algorithms
+[ 43%] [32mBuilding CXX object games/CMakeFiles/games.dir/negotiation_city/negotiation_city.cc.o[0m
+[ 55%] Built target games
+[ 55%] [32m[1mLinking CXX executable best_response_test[0m
+[ 55%] [32m[1mLinking CXX executable cfr_test[0m
+[ 55%] [32m[1mLinking CXX executable cfr_br_test[0m
+[ 55%] [32m[1mLinking CXX executable corr_dist_test[0m
+[ 55%] [32m[1mLinking CXX executable get_all_histories_test[0m
+[ 55%] [32m[1mLinking CXX executable deterministic_policy_test[0m
+[ 55%] [32m[1mLinking CXX executable get_all_states_test[0m
+[ 56%] [32m[1mLinking CXX executable get_legal_actions_map_test[0m
+[ 57%] [32m[1mLinking CXX executable external_sampling_mccfr_test[0m
+[ 57%] [32m[1mLinking CXX executable history_tree_test[0m
+[ 57%] [32m[1mLinking CXX executable evaluate_bots_test[0m
+[ 58%] [32m[1mLinking CXX executable corr_dev_builder_test[0m
+[ 58%] [32m[1mLinking CXX executable is_mcts_test[0m
+[ 58%] [32m[1mLinking CXX executable infostate_tree_test[0m
+[ 58%] [32m[1mLinking CXX executable minimax_test[0m
+[ 58%] [32m[1mLinking CXX executable oos_test[0m
+[ 58%] [32m[1mLinking CXX executable observation_history_test[0m
+[ 58%] [32m[1mLinking CXX executable state_distribution_test[0m
+[ 58%] [32m[1mLinking CXX executable matrix_game_utils_test[0m
+[ 58%] [32m[1mLinking CXX executable outcome_sampling_mccfr_test[0m
+[ 59%] Built target minimax_test
+[ 59%] Built target cfr_br_test
+[ 59%] [32m[1mLinking CXX executable tabular_best_response_mdp_test[0m
+[ 59%] [32m[1mLinking CXX executable tabular_exploitability_test[0m
+[ 59%] Built target get_legal_actions_map_test
+[ 59%] Built target get_all_states_test
+[ 59%] Built target deterministic_policy_test
+[ 59%] Built target state_distribution_test
+[ 59%] Built target corr_dist_test
+[ 59%] Built target observation_history_test
+[ 59%] Built target cfr_test
+[ 59%] Built target external_sampling_mccfr_test
+[ 59%] [32m[1mLinking CXX executable tabular_sarsa_test[0m
+[ 59%] [32m[1mLinking CXX executable tabular_q_learning_test[0m
+[ 59%] [32m[1mLinking CXX executable tensor_game_utils_test[0m
+[ 60%] Built target history_tree_test
+[ 60%] Built target corr_dev_builder_test
+[ 61%] Built target is_mcts_test
+[ 61%] [32m[1mLinking CXX executable trajectories_test[0m
+[ 61%] Built target get_all_histories_test
+[ 61%] [32m[1mLinking CXX executable simple_gin_rummy_bot_test[0m
+[ 61%] Built target best_response_test
+[ 61%] [32m[1mLinking CXX executable simple_gin_rummy_bot_example[0m
+[ 61%] Built target outcome_sampling_mccfr_test
+[ 61%] [32m[1mLinking CXX executable random_uci_bot[0m
+[ 61%] [32m[1mLinking CXX executable human_bot_test[0m
+[ 61%] Built target evaluate_bots_test
+[ 61%] [32m[1mLinking CXX executable benchmark_game[0m
+[ 61%] [32m[1mLinking CXX executable cfr_example[0m
+[ 61%] [32m[1mLinking CXX executable uci_bot_test[0m
+[ 61%] [32m[1mLinking CXX executable imperfect_recall_mccfr[0m
+[ 62%] [32m[1mLinking CXX executable cfr_multi_equilibria_example[0m
+[ 62%] [32m[1mLinking CXX executable example[0m
+[ 62%] [32m[1mLinking CXX executable fsicfr_liars_dice[0m
+[ 63%] Built target matrix_game_utils_test
+[ 64%] [32m[1mLinking CXX executable gtp[0m
+[ 64%] Built target infostate_tree_test
+[ 64%] [32m[1mLinking CXX executable matrix_example[0m
+[ 64%] Built target oos_test
+[ 64%] [32m[1mLinking CXX executable mcts_example[0m
+[ 64%] Built target tabular_best_response_mdp_test
+[ 64%] Built target tabular_exploitability_test
+[ 64%] [32m[1mLinking CXX executable minimax_example[0m
+[ 64%] Built target human_bot_test
+[ 64%] Built target tabular_sarsa_test
+[ 64%] Built target fsicfr_liars_dice
+[ 64%] [32m[1mLinking CXX executable policy_iteration_example[0m
+[ 65%] Built target tensor_game_utils_test
+[ 66%] Built target simple_gin_rummy_bot_test
+[ 66%] [32m[1mLinking CXX executable value_iteration_example[0m
+[ 66%] [32m[1mLinking CXX executable tabular_sarsa_example[0m
+[ 66%] [32m[1mLinking CXX executable tabular_q_learning_example[0m
+[ 66%] [32m[1mLinking CXX executable count_all_states[0m
+[ 66%] Built target random_uci_bot
+[ 66%] Built target simple_gin_rummy_bot_example
+[ 66%] [32m[1mLinking CXX executable 2048_test[0m
+[ 66%] Built target cfr_example
+[ 66%] [32m[1mLinking CXX executable amazons_test[0m
+[ 66%] [32m[1mLinking CXX executable backgammon_test[0m
+[ 66%] Built target uci_bot_test
+[ 66%] Built target cfr_multi_equilibria_example
+[ 66%] Built target gtp
+[ 66%] Built target benchmark_game
+[ 66%] [32m[1mLinking CXX executable bargaining_instance_generator[0m
+[ 66%] [32m[1mLinking CXX executable bargaining_test[0m
+[ 66%] Built target example
+[ 66%] [32m[1mLinking CXX executable blackjack_test[0m
+[ 66%] [32m[1mLinking CXX executable battleship_test[0m
+[ 66%] [32m[1mLinking CXX executable blotto_test[0m
+[ 67%] [32m[1mLinking CXX executable breakthrough_test[0m
+[ 67%] Built target trajectories_test
+[ 67%] [32m[1mLinking CXX executable bridge_test[0m
+[ 68%] Built target tabular_q_learning_test
+[ 68%] Built target imperfect_recall_mccfr
+[ 68%] [32m[1mLinking CXX executable catch_test[0m
+[ 68%] [32m[1mLinking CXX executable checkers_test[0m
+[ 68%] Built target matrix_example
+[ 68%] [32m[1mLinking CXX executable chess_test[0m
+[ 68%] Built target mcts_example
+[ 68%] [32m[1mLinking CXX executable cliff_walking_test[0m
+[ 68%] Built target tabular_sarsa_example
+[ 68%] Built target minimax_example
+[ 69%] Built target policy_iteration_example
+[ 69%] Built target value_iteration_example
+[ 69%] [32m[1mLinking CXX executable clobber_test[0m
+[ 69%] [32m[1mLinking CXX executable coin_game_test[0m
+[ 69%] [32m[1mLinking CXX executable colored_trails_board_generator[0m
+[ 69%] [32m[1mLinking CXX executable colored_trails_test[0m
+[ 69%] Built target backgammon_test
+[ 69%] Built target count_all_states
+[ 69%] Built target amazons_test
+[ 69%] [32m[1mLinking CXX executable connect_four_test[0m
+[ 69%] Built target bargaining_instance_generator
+[ 69%] [32m[1mLinking CXX executable coop_box_pushing_test[0m
+[ 69%] Built target breakthrough_test
+[ 69%] [32m[1mLinking CXX executable coordinated_mp_test[0m
+[ 69%] Built target blotto_test
+[ 69%] [32m[1mLinking CXX executable crazy_eights_test[0m
+[ 69%] Built target 2048_test
+[ 69%] [32m[1mLinking CXX executable crowd_modelling_test[0m
+[ 69%] Built target battleship_test
+[ 69%] Built target tabular_q_learning_example
+[ 70%] [32m[1mLinking CXX executable crowd_modelling_2d_test[0m
+[ 70%] [32m[1mLinking CXX executable cursor_go_test[0m
+[ 70%] [32m[1mLinking CXX executable dark_chess_test[0m
+[ 70%] Built target bridge_test
+[ 71%] Built target bargaining_test
+[ 71%] [32m[1mLinking CXX executable dark_hex_test[0m
+[ 71%] [32m[1mLinking CXX executable deep_sea_test[0m
+[ 71%] [32m[1mLinking CXX executable dots_and_boxes_test[0m
+[ 72%] Built target blackjack_test
+[ 72%] [32m[1mLinking CXX executable dynamic_routing_data_test[0m
+[ 73%] Built target catch_test
+[ 73%] [32m[1mLinking CXX executable dynamic_routing_test[0m
+[ 73%] Built target checkers_test
+[ 73%] Built target chess_test
+[ 73%] [32m[1mLinking CXX executable dynamic_routing_utils_test[0m
+[ 73%] [32m[1mLinking CXX executable dou_dizhu_test[0m
+[ 73%] Built target cliff_walking_test
+[ 73%] [32m[1mLinking CXX executable dou_dizhu_utils_test[0m
+[ 73%] Built target clobber_test
+[ 73%] Built target coin_game_test
+[ 73%] [32m[1mLinking CXX executable efg_game_test[0m
+[ 73%] Built target colored_trails_test
+[ 74%] Built target coop_box_pushing_test
+[ 75%] Built target colored_trails_board_generator
+[ 75%] [32m[1mLinking CXX executable euchre_test[0m
+[ 75%] [32m[1mLinking CXX executable first_sealed_auction_test[0m
+[ 75%] [32m[1mLinking CXX executable garnet_test[0m
+[ 75%] [32m[1mLinking CXX executable gin_rummy_test[0m
+[ 75%] Built target crowd_modelling_test
+[ 76%] Built target dark_hex_test
+[ 76%] [32m[1mLinking CXX executable go_test[0m
+[ 76%] Built target dark_chess_test
+[ 76%] Built target cursor_go_test
+[ 76%] Built target deep_sea_test
+[ 76%] Built target crazy_eights_test
+[ 77%] [32m[1mLinking CXX executable phantom_go_test[0m
+[ 77%] Built target dots_and_boxes_test
+[ 77%] [32m[1mLinking CXX executable goofspiel_test[0m
+[ 77%] [32m[1mLinking CXX executable havannah_test[0m
+[ 77%] Built target dynamic_routing_data_test
+[ 77%] [32m[1mLinking CXX executable hearts_test[0m
+[ 77%] [32m[1mLinking CXX executable hex_test[0m
+[ 77%] Built target crowd_modelling_2d_test
+[ 77%] [32m[1mLinking CXX executable kriegspiel_test[0m
+[ 78%] [32m[1mLinking CXX executable kuhn_poker_test[0m
+[ 79%] Built target dynamic_routing_test
+[ 79%] Built target coordinated_mp_test
+[ 79%] [32m[1mLinking CXX executable leduc_poker_test[0m
+[ 79%] Built target connect_four_test
+[ 80%] [32m[1mLinking CXX executable liars_dice_test[0m
+[ 80%] [32m[1mLinking CXX executable lewis_signaling_test[0m
+[ 80%] [32m[1mLinking CXX executable maedn_test[0m
+[ 80%] Built target dynamic_routing_utils_test
+[ 81%] [32m[1mLinking CXX executable mancala_test[0m
+[ 81%] Built target dou_dizhu_test
+[ 81%] [32m[1mLinking CXX executable markov_soccer_test[0m
+[ 81%] Built target dou_dizhu_utils_test
+[ 81%] [32m[1mLinking CXX executable matching_pennies_3p_test[0m
+[ 81%] Built target efg_game_test
+[ 82%] Built target garnet_test
+[ 82%] [32m[1mLinking CXX executable matrix_games_test[0m
+[ 82%] [32m[1mLinking CXX executable morpion_solitaire_test[0m
+[ 82%] Built target first_sealed_auction_test
+[ 83%] [32m[1mLinking CXX executable negotiation_test[0m
+[ 83%] Built target gin_rummy_test
+[ 83%] Built target goofspiel_test
+[ 83%] Built target hearts_test
+[ 83%] Built target hex_test
+[ 83%] [32m[1mLinking CXX executable nfg_game_test[0m
+[ 83%] Built target lewis_signaling_test
+[ 83%] [32m[1mLinking CXX executable nim_test[0m
+[ 83%] Built target go_test
+[ 83%] Built target havannah_test
+[ 83%] Built target maedn_test
+[ 83%] [32m[1mLinking CXX executable oh_hell_test[0m
+[ 83%] [32m[1mLinking CXX executable nine_mens_morris_test[0m
+[ 83%] [32m[1mLinking CXX executable oshi_zumo_test[0m
+[ 83%] Built target phantom_go_test
+[ 83%] Built target leduc_poker_test
+[ 84%] [32m[1mLinking CXX executable othello_test[0m
+[ 84%] Built target euchre_test
+[ 84%] [32m[1mLinking CXX executable pathfinding_test[0m
+[ 84%] [32m[1mLinking CXX executable oware_test[0m
+[ 85%] [32m[1mLinking CXX executable pentago_test[0m
+[ 85%] [32m[1mLinking CXX executable phantom_ttt_test[0m
+[ 85%] [32m[1mLinking CXX executable pig_test[0m
+[ 85%] Built target liars_dice_test
+[ 85%] [32m[1mLinking CXX executable quoridor_test[0m
+[ 85%] Built target kriegspiel_test
+[ 85%] [32m[1mLinking CXX executable rbc_test[0m
+[ 85%] Built target markov_soccer_test
+[ 85%] Built target kuhn_poker_test
+[ 85%] [32m[1mLinking CXX executable sheriff_test[0m
+[ 85%] Built target mancala_test
+[ 85%] [32m[1mLinking CXX executable solitaire_test[0m
+[ 85%] [32m[1mLinking CXX executable skat_test[0m
+[ 85%] Built target matching_pennies_3p_test
+[ 85%] Built target matrix_games_test
+[ 86%] [32m[1mLinking CXX executable stones_and_gems_test[0m
+[ 86%] [32m[1mLinking CXX executable tarok_test[0m
+[ 86%] Built target morpion_solitaire_test
+[ 86%] [32m[1mLinking CXX executable tic_tac_toe_test[0m
+[ 86%] Built target nim_test
+[ 86%] [32m[1mLinking CXX executable laser_tag_test[0m
+[ 86%] Built target oh_hell_test
+[ 86%] Built target nine_mens_morris_test
+[ 86%] Built target oshi_zumo_test
+[ 86%] Built target oware_test
+[ 86%] Built target negotiation_test
+[ 86%] Built target pathfinding_test
+[ 86%] [32m[1mLinking CXX executable tiny_bridge_test[0m
+[ 86%] Built target phantom_ttt_test
+[ 86%] [32m[1mLinking CXX executable tiny_hanabi_test[0m
+[ 87%] [32m[1mLinking CXX executable trade_comm_test[0m
+[ 87%] [32m[1mLinking CXX executable y_test[0m
+[ 87%] [32m[1mLinking CXX executable ultimate_tic_tac_toe_test[0m
+[ 87%] [32m[1mLinking CXX executable restricted_nash_response_test[0m
+[ 87%] Built target othello_test
+[ 87%] Built target pig_test
+[ 87%] [32m[1mLinking CXX executable turn_based_simultaneous_game_test[0m
+[ 87%] [32m[1mLinking CXX executable misere_test[0m
+[ 87%] Built target quoridor_test
+[ 87%] [32m[1mLinking CXX executable add_noise_test[0m
+[ 87%] Built target rbc_test
+[ 87%] [32m[1mLinking CXX executable coop_to_1p_test[0m
+[ 87%] Built target pentago_test
+[ 88%] [32m[1mLinking CXX executable efg_writer_test[0m
+[ 88%] Built target sheriff_test
+[ 88%] [32m[1mLinking CXX executable repeated_game_test[0m
+[ 88%] Built target nfg_game_test
+[ 89%] [32m[1mLinking CXX executable normal_form_extensive_game_test[0m
+[ 89%] [32m[1mLinking CXX executable start_at_test[0m
+[ 89%] Built target solitaire_test
+[ 90%] [32m[1mLinking CXX executable zerosum_test[0m
+[ 90%] Built target skat_test
+[ 90%] [32m[1mLinking CXX shared module pyspiel.so[0m
+[ 90%] Built target stones_and_gems_test
+[ 90%] Built target tarok_test
+[ 91%] [32m[1mLinking CXX executable circular_buffer_test[0m
+[ 91%] [32m[1mLinking CXX executable combinatorics_test[0m
+[ 91%] Built target tic_tac_toe_test
+[ 91%] [32m[1mLinking CXX executable data_logger_test[0m
+[ 91%] Built target y_test
+[ 91%] [32m[1mLinking CXX executable file_test[0m
+[ 91%] Built target trade_comm_test
+[ 91%] Built target tiny_hanabi_test
+[ 91%] Built target laser_tag_test
+[ 91%] Built target tiny_bridge_test
+[ 91%] [32m[1mLinking CXX executable json_test[0m
+[ 91%] Built target turn_based_simultaneous_game_test
+[ 91%] [32m[1mLinking CXX executable functional_test[0m
+[ 91%] [32m[1mLinking CXX executable logger_test[0m
+[ 92%] Built target ultimate_tic_tac_toe_test
+[ 92%] Built target coop_to_1p_test
+[ 92%] [32m[1mLinking CXX executable lru_cache_test[0m
+[ 92%] Built target add_noise_test
+[ 93%] [32m[1mLinking CXX executable random_test[0m
+[ 93%] [32m[1mLinking CXX executable run_python_test[0m
+[ 93%] [32m[1mLinking CXX executable stats_test[0m
+[ 93%] [32m[1mLinking CXX executable tensor_view_test[0m
+[ 93%] Built target misere_test
+[ 94%] Built target restricted_nash_response_test
+[ 95%] [32m[1mLinking CXX executable threaded_queue_test[0m
+[ 96%] [32m[1mLinking CXX executable spiel_test[0m
+[ 96%] Built target efg_writer_test
+[ 96%] [32m[1mLinking CXX executable action_view_test[0m
+[ 96%] Built target start_at_test
+[ 96%] Built target repeated_game_test
+[ 96%] Built target zerosum_test
+[ 96%] Built target normal_form_extensive_game_test
+[ 96%] Built target circular_buffer_test
+[ 96%] Built target combinatorics_test
+[ 96%] Built target data_logger_test
+[ 96%] Built target file_test
+[ 97%] Built target functional_test
+[ 97%] Built target logger_test
+[ 97%] Built target json_test
+[ 97%] Built target lru_cache_test
+[ 97%] Built target tensor_view_test
+[ 97%] Built target threaded_queue_test
+[ 97%] Built target random_test
+[ 97%] Built target action_view_test
+[ 97%] Built target run_python_test
+[ 97%] Built target stats_test
+[ 97%] Built target spiel_test
+[100%] Built target pyspiel
+Running all tests
+Test project /home/jin/code/open_spiel_forked/build
+        Start 129: python/../integration_tests/playthrough_test.py
+        Start 191: python/tests/games_sim_test.py
+        Start 128: python/../integration_tests/api_test.py
+        Start 112: laser_tag_test
+        Start  86: maedn_test
+        Start 132: python/algorithms/best_response_test.py
+        Start 184: python/tests/mfg_implementation_test/mfg_test.py
+        Start 133: python/algorithms/boltzmann_tabular_qlearner_test.py
+        Start 149: python/algorithms/outcome_sampling_mccfr_test.py
+        Start 155: python/algorithms/tabular_qlearner_test.py
+        Start 135: python/algorithms/cfr_test.py
+        Start 172: python/games/dynamic_routing_test.py
+        Start 151: python/algorithms/policy_aggregator_test.py
+        Start 154: python/algorithms/regret_matching_test.py
+        Start  57: crazy_eights_test
+        Start 117: y_test
+        Start 104: quoridor_test
+        Start 103: pig_test
+        Start  78: havannah_test
+        Start 109: stones_and_gems_test
+        Start  48: checkers_test
+        Start 195: python/tests/sampled_stochastic_games_test.py
+        Start 139: python/algorithms/fictitious_play_test.py
+        Start 108: solitaire_test
+        Start  55: coop_box_pushing_test
+        Start  38: 2048_test
+        Start  88: markov_soccer_test
+        Start  40: backgammon_test
+        Start 152: python/algorithms/projected_replicator_dynamics_test.py
+        Start 134: python/algorithms/cfr_br_test.py
+        Start  95: nine_mens_morris_test
+        Start  21: tabular_best_response_mdp_test
+        Start 183: python/mfg/games/dynamic_routing_test.py
+        Start  42: battleship_test
+        Start 100: pathfinding_test
+        Start 169: python/games/chat_game_test.py
+        Start  26: trajectories_test
+        Start 105: rbc_test
+        Start 192: python/tests/policy_test.py
+        Start 142: python/algorithms/get_all_states_test.py
+        Start 156: python/algorithms/sequence_form_utils_test.py
+        Start 193: python/tests/pyspiel_test.py
+        Start   2: cfr_test
+        Start  49: chess_test
+        Start 145: python/algorithms/mcts_test.py
+        Start   3: cfr_br_test
+        Start 213: spiel_test
+        Start  68: dou_dizhu_test
+        Start  19: outcome_sampling_mccfr_test
+        Start  61: dark_chess_test
+        Start   8: external_sampling_mccfr_test
+        Start  98: othello_test
+        Start  94: nim_test
+        Start  83: leduc_poker_test
+        Start  74: gin_rummy_test
+        Start  92: negotiation_test
+        Start  81: kriegspiel_test
+        Start 138: python/algorithms/external_sampling_mccfr_test.py
+        Start 177: python/mfg/algorithms/mirror_descent_test.py
+        Start 168: python/games/block_dominoes_test.py
+        Start  45: breakthrough_test
+        Start  77: goofspiel_test
+        Start  51: clobber_test
+        Start  18: oos_test
+        Start 175: python/games/tic_tac_toe_test.py
+        Start 136: python/algorithms/evaluate_bots_test.py
+        Start 106: sheriff_test
+        Start  39: amazons_test
+        Start  53: colored_trails_test
+        Start 124: normal_form_extensive_game_test
+        Start  46: bridge_test
+        Start 101: pentago_test
+        Start  96: oh_hell_test
+        Start  12: history_tree_test
+        Start 182: python/mfg/games/predator_prey_test.py
+        Start 188: python/tests/games_chess_test.py
+        Start  24: tabular_q_learning_test
+        Start  72: first_sealed_auction_test
+        Start 116: ultimate_tic_tac_toe_test
+        Start 123: efg_writer_test
+  1/214 Test #116: ultimate_tic_tac_toe_test ..................................   Passed    6.13 sec
+        Start  23: tabular_sarsa_test
+  2/214 Test  #72: first_sealed_auction_test ..................................   Passed    7.32 sec
+        Start  35: minimax_example_test
+  3/214 Test #123: efg_writer_test ............................................   Passed    7.34 sec
+        Start  87: mancala_test
+  4/214 Test #101: pentago_test ...............................................   Passed    7.76 sec
+        Start  70: efg_game_test
+  5/214 Test  #96: oh_hell_test ...............................................   Passed    7.78 sec
+        Start 187: python/tests/games_bridge_test.py
+  6/214 Test #182: python/mfg/games/predator_prey_test.py .....................   Passed    8.25 sec
+        Start  80: hex_test
+  7/214 Test #188: python/tests/games_chess_test.py ...........................   Passed    8.28 sec
+        Start  79: hearts_test
+  8/214 Test  #53: colored_trails_test ........................................   Passed    8.77 sec
+        Start  52: coin_game_test
+  9/214 Test #106: sheriff_test ...............................................   Passed    9.25 sec
+        Start 137: python/algorithms/expected_game_score_test.py
+ 10/214 Test  #39: amazons_test ...............................................   Passed    9.28 sec
+        Start 148: python/algorithms/noisy_policy_test.py
+ 11/214 Test #124: normal_form_extensive_game_test ............................   Passed    9.30 sec
+        Start   5: corr_dev_builder_test
+ 12/214 Test  #46: bridge_test ................................................   Passed    9.32 sec
+        Start 178: python/mfg/algorithms/greedy_policy_test.py
+ 13/214 Test  #51: clobber_test ...............................................   Passed    9.70 sec
+        Start 174: python/games/liars_poker_test.py
+ 14/214 Test  #24: tabular_q_learning_test ....................................   Passed    9.72 sec
+        Start 161: python/bots/is_mcts_test.py
+ 15/214 Test  #45: breakthrough_test ..........................................   Passed   10.35 sec
+        Start  75: go_test
+ 16/214 Test  #77: goofspiel_test .............................................   Passed   10.38 sec
+        Start  13: infostate_tree_test
+ 17/214 Test  #12: history_tree_test ..........................................   Passed   10.78 sec
+        Start   4: corr_dist_test
+ 18/214 Test #177: python/mfg/algorithms/mirror_descent_test.py ...............   Passed   11.37 sec
+        Start 196: python/tests/tensor_game_utils_test.py
+ 19/214 Test #168: python/games/block_dominoes_test.py ........................   Passed   11.37 sec
+        Start  76: phantom_go_test
+ 20/214 Test #175: python/games/tic_tac_toe_test.py ...........................   Passed   11.35 sec
+        Start 113: tiny_bridge_test
+ 21/214 Test #136: python/algorithms/evaluate_bots_test.py ....................   Passed   11.34 sec
+        Start 181: python/mfg/games/crowd_modelling_test.py
+ 22/214 Test  #81: kriegspiel_test ............................................   Passed   13.00 sec
+        Start  82: kuhn_poker_test
+ 23/214 Test  #18: oos_test ...................................................   Passed   13.00 sec
+        Start 180: python/mfg/algorithms/policy_value_test.py
+ 24/214 Test  #87: mancala_test ...............................................   Passed    5.57 sec
+        Start 176: python/mfg/algorithms/best_response_value_test.py
+ 25/214 Test  #80: hex_test ...................................................   Passed    4.69 sec
+        Start 179: python/mfg/algorithms/nash_conv_test.py
+ 26/214 Test  #74: gin_rummy_test .............................................   Passed   13.38 sec
+        Start 158: python/algorithms/mmd_dilated_test.py
+ 27/214 Test  #92: negotiation_test ...........................................   Passed   13.38 sec
+        Start 110: tarok_test
+ 28/214 Test  #70: efg_game_test ..............................................   Passed    5.52 sec
+        Start  36: policy_iteration_example_test
+ 29/214 Test  #35: minimax_example_test .......................................   Passed    5.97 sec
+        Start   7: evaluate_bots_test
+ 30/214 Test #174: python/games/liars_poker_test.py ...........................   Passed    3.69 sec
+        Start 150: python/algorithms/policy_aggregator_joint_test.py
+ 31/214 Test #161: python/bots/is_mcts_test.py ................................   Passed    3.61 sec
+        Start  90: matrix_games_test
+ 32/214 Test #178: python/mfg/algorithms/greedy_policy_test.py ................   Passed    4.06 sec
+        Start 130: python/algorithms/action_value_test.py
+ 33/214 Test #137: python/algorithms/expected_game_score_test.py ..............   Passed    4.17 sec
+        Start 185: python/tests/bot_test.py
+ 34/214 Test  #23: tabular_sarsa_test .........................................   Passed    7.29 sec
+        Start  64: dots_and_boxes_test
+ 35/214 Test  #52: coin_game_test .............................................   Passed    5.03 sec
+        Start 141: python/algorithms/generate_playthrough_test.py
+ 36/214 Test  #75: go_test ....................................................   Passed    3.55 sec
+        Start 127: zerosum_test
+ 37/214 Test #138: python/algorithms/external_sampling_mccfr_test.py ..........   Passed   14.05 sec
+        Start 107: skat_test
+ 38/214 Test #187: python/tests/games_bridge_test.py ..........................   Passed    6.17 sec
+        Start  54: connect_four_test
+ 39/214 Test  #79: hearts_test ................................................   Passed    5.67 sec
+        Start 157: python/algorithms/wolf_phc_test.py
+ 40/214 Test #148: python/algorithms/noisy_policy_test.py .....................   Passed    4.70 sec
+        Start  22: tabular_exploitability_test
+ 41/214 Test  #76: phantom_go_test ............................................   Passed    3.15 sec
+        Start  60: cursor_go_test
+ 42/214 Test #181: python/mfg/games/crowd_modelling_test.py ...................   Passed    3.13 sec
+        Start  99: oware_test
+ 43/214 Test  #83: leduc_poker_test ...........................................   Passed   14.85 sec
+        Start  44: blotto_test
+ 44/214 Test   #5: corr_dev_builder_test ......................................   Passed    5.56 sec
+        Start  37: value_iteration_example_test
+ 45/214 Test  #13: infostate_tree_test ........................................   Passed    5.03 sec
+        Start 165: python/egt/utils_test.py
+ 46/214 Test   #4: corr_dist_test .............................................   Passed    4.57 sec
+        Start  47: catch_test
+ 47/214 Test #196: python/tests/tensor_game_utils_test.py .....................   Passed    4.14 sec
+        Start 144: python/algorithms/mcts_agent_test.py
+ 48/214 Test #113: tiny_bridge_test ...........................................   Passed    4.11 sec
+        Start 120: misere_test
+ 49/214 Test  #98: othello_test ...............................................   Passed   15.83 sec
+        Start 167: python/environments/cliff_walking_test.py
+ 50/214 Test  #82: kuhn_poker_test ............................................   Passed    2.84 sec
+        Start  50: cliff_walking_test
+ 51/214 Test #110: tarok_test .................................................   Passed    2.50 sec
+        Start   9: get_all_histories_test
+ 52/214 Test  #90: matrix_games_test ..........................................   Passed    2.40 sec
+        Start 131: python/algorithms/action_value_vs_best_response_test.py
+ 53/214 Test  #64: dots_and_boxes_test ........................................   Passed    2.34 sec
+        Start 171: python/games/data_test.py
+ 54/214 Test #127: zerosum_test ...............................................   Passed    1.94 sec
+        Start 163: python/egt/dynamics_test.py
+ 55/214 Test #107: skat_test ..................................................   Passed    1.88 sec
+        Start  71: euchre_test
+ 56/214 Test #180: python/mfg/algorithms/policy_value_test.py .................   Passed    2.90 sec
+        Start 170: python/games/chat_games/envs/base_envs/base_envs_test.py
+ 57/214 Test #176: python/mfg/algorithms/best_response_value_test.py ..........   Passed    2.92 sec
+        Start 166: python/environments/catch_test.py
+ 58/214 Test #158: python/algorithms/mmd_dilated_test.py ......................   Passed    2.65 sec
+        Start 194: python/tests/rl_environment_test.py
+ 59/214 Test #150: python/algorithms/policy_aggregator_joint_test.py ..........   Passed    2.59 sec
+        Start  91: morpion_solitaire_test
+ 60/214 Test  #61: dark_chess_test ............................................   Passed   16.48 sec
+        Start 162: python/bots/uniform_random_test.py
+ 61/214 Test  #54: connect_four_test ..........................................   Passed    2.38 sec
+        Start 146: python/algorithms/minimax_test.py
+ 62/214 Test  #60: cursor_go_test .............................................   Passed    1.95 sec
+        Start  97: oshi_zumo_test
+ 63/214 Test #157: python/algorithms/wolf_phc_test.py .........................   Passed    2.44 sec
+        Start  14: is_mcts_test
+ 64/214 Test #185: python/tests/bot_test.py ...................................   Passed    3.07 sec
+        Start 122: coop_to_1p_test
+ 65/214 Test #141: python/algorithms/generate_playthrough_test.py .............   Passed    2.68 sec
+        Start 159: python/bots/bluechip_bridge_test.py
+ 66/214 Test #179: python/mfg/algorithms/nash_conv_test.py ....................   Passed    3.57 sec
+        Start 199: python/utils/spawn_test.py
+ 67/214 Test #130: python/algorithms/action_value_test.py .....................   Passed    3.16 sec
+        Start 190: python/tests/games_gin_rummy_test.py
+ 68/214 Test   #7: evaluate_bots_test .........................................   Passed    3.29 sec
+        Start 186: python/tests/game_transforms_test.py
+ 69/214 Test #144: python/algorithms/mcts_agent_test.py .......................   Passed    1.22 sec
+        Start 140: python/algorithms/gambit_test.py
+ 70/214 Test  #22: tabular_exploitability_test ................................   Passed    2.65 sec
+        Start 209: run_python_test
+ 71/214 Test  #94: nim_test ...................................................   Passed   16.80 sec
+        Start 147: python/algorithms/nfg_utils_test.py
+ 72/214 Test  #36: policy_iteration_example_test ..............................   Passed    3.81 sec
+        Start 160: python/bots/bluechip_bridge_uncontested_bidding_test.py
+ 73/214 Test  #99: oware_test .................................................   Passed    2.69 sec
+        Start 143: python/algorithms/ismcts_agent_test.py
+ 74/214 Test  #44: blotto_test ................................................   Passed    2.43 sec
+        Start 164: python/egt/heuristic_payoff_table_test.py
+ 75/214 Test  #37: value_iteration_example_test ...............................   Passed    2.32 sec
+        Start 153: python/algorithms/random_agent_test.py
+ 76/214 Test #165: python/egt/utils_test.py ...................................   Passed    1.87 sec
+        Start 173: python/games/dynamic_routing_utils_test.py
+ 77/214 Test #167: python/environments/cliff_walking_test.py ..................   Passed    1.53 sec
+        Start  41: bargaining_test
+ 78/214 Test #194: python/tests/rl_environment_test.py ........................   Passed    1.33 sec
+        Start 102: phantom_ttt_test
+ 79/214 Test  #68: dou_dizhu_test .............................................   Passed   17.67 sec
+        Start  43: blackjack_test
+ 80/214 Test  #47: catch_test .................................................   Passed    2.13 sec
+        Start 119: turn_based_simultaneous_game_test
+ 81/214 Test #120: misere_test ................................................   Passed    2.12 sec
+        Start 197: python/utils/file_logger_test.py
+ 82/214 Test  #50: cliff_walking_test .........................................   Passed    1.83 sec
+        Start 189: python/tests/games_euchre_test.py
+ 83/214 Test  #71: euchre_test ................................................   Passed    1.76 sec
+        Start  25: tensor_game_utils_test
+ 84/214 Test #163: python/egt/dynamics_test.py ................................   Passed    1.79 sec
+        Start 118: restricted_nash_response_test
+ 85/214 Test #171: python/games/data_test.py ..................................   Passed    1.81 sec
+        Start 111: tic_tac_toe_test
+ 86/214 Test #131: python/algorithms/action_value_vs_best_response_test.py ....   Passed    1.83 sec
+        Start  63: deep_sea_test
+ 87/214 Test #166: python/environments/catch_test.py ..........................   Passed    1.75 sec
+        Start  85: liars_dice_test
+ 88/214 Test #170: python/games/chat_games/envs/base_envs/base_envs_test.py ...   Passed    1.79 sec
+        Start 115: trade_comm_test
+ 89/214 Test  #97: oshi_zumo_test .............................................   Passed    1.26 sec
+        Start 198: python/utils/lru_cache_test.py
+ 90/214 Test #122: coop_to_1p_test ............................................   Passed    1.18 sec
+        Start  10: get_all_states_test
+ 91/214 Test #146: python/algorithms/minimax_test.py ..........................   Passed    1.34 sec
+        Start  15: matrix_game_utils_test
+ 92/214 Test #162: python/bots/uniform_random_test.py .........................   Passed    1.36 sec
+        Start  34: mcts_example_test
+ 93/214 Test #159: python/bots/bluechip_bridge_test.py ........................   Passed    1.20 sec
+        Start 125: repeated_game_test
+ 94/214 Test #186: python/tests/game_transforms_test.py .......................   Passed    1.11 sec
+        Start 126: start_at_test
+ 95/214 Test #140: python/algorithms/gambit_test.py ...........................   Passed    1.11 sec
+        Start  27: simple_gin_rummy_bot_test
+ 96/214 Test   #9: get_all_histories_test .....................................   Passed    1.99 sec
+        Start 204: functional_test
+ 97/214 Test #190: python/tests/games_gin_rummy_test.py .......................   Passed    1.20 sec
+        Start  30: benchmark_game_test
+ 98/214 Test  #91: morpion_solitaire_test .....................................   Passed    2.06 sec
+        Start 200: circular_buffer_test
+ 99/214 Test #199: python/utils/spawn_test.py .................................   Passed    1.47 sec
+        Start  29: uci_bot_test
+100/214 Test #209: run_python_test ............................................   Passed    1.40 sec
+        Start  31: cfr_example_test
+101/214 Test #147: python/algorithms/nfg_utils_test.py ........................   Passed    1.41 sec
+        Start   6: deterministic_policy_test
+102/214 Test #160: python/bots/bluechip_bridge_uncontested_bidding_test.py ....   Passed    0.98 sec
+        Start  28: human_bot_test
+103/214 Test #125: repeated_game_test .........................................   Passed    0.45 sec
+        Start  33: matrix_example_test
+104/214 Test #126: start_at_test ..............................................   Passed    0.46 sec
+        Start   1: best_response_test
+105/214 Test  #27: simple_gin_rummy_bot_test ..................................   Passed    0.46 sec
+        Start  32: example_test
+106/214 Test #204: functional_test ............................................   Passed    0.47 sec
+        Start  11: get_legal_actions_map_test
+107/214 Test  #19: outcome_sampling_mccfr_test ................................   Passed   18.67 sec
+        Start 212: threaded_queue_test
+108/214 Test  #14: is_mcts_test ...............................................   Passed    2.07 sec
+        Start  16: minimax_test
+109/214 Test #143: python/algorithms/ismcts_agent_test.py .....................   Passed    1.37 sec
+        Start  17: observation_history_test
+110/214 Test #164: python/egt/heuristic_payoff_table_test.py ..................   Passed    1.39 sec
+        Start  20: state_distribution_test
+111/214 Test #153: python/algorithms/random_agent_test.py .....................   Passed    1.38 sec
+        Start 205: json_test
+112/214 Test #173: python/games/dynamic_routing_utils_test.py .................   Passed    1.39 sec
+        Start 214: action_view_test
+113/214 Test  #41: bargaining_test ............................................   Passed    1.41 sec
+        Start  56: coordinated_mp_test
+114/214 Test #102: phantom_ttt_test ...........................................   Passed    1.41 sec
+        Start  58: crowd_modelling_test
+115/214 Test  #43: blackjack_test .............................................   Passed    1.16 sec
+        Start  59: crowd_modelling_2d_test
+116/214 Test #119: turn_based_simultaneous_game_test ..........................   Passed    1.14 sec
+        Start  62: dark_hex_test
+117/214 Test #197: python/utils/file_logger_test.py ...........................   Passed    1.12 sec
+        Start  93: nfg_game_test
+118/214 Test #189: python/tests/games_euchre_test.py ..........................   Passed    1.14 sec
+        Start  67: dynamic_routing_utils_test
+119/214 Test  #25: tensor_game_utils_test .....................................   Passed    1.15 sec
+        Start  65: dynamic_routing_data_test
+120/214 Test #118: restricted_nash_response_test ..............................   Passed    1.17 sec
+        Start  66: dynamic_routing_test
+121/214 Test #111: tic_tac_toe_test ...........................................   Passed    1.18 sec
+        Start  69: dou_dizhu_utils_test
+122/214 Test  #63: deep_sea_test ..............................................   Passed    1.18 sec
+        Start 207: lru_cache_test
+123/214 Test  #85: liars_dice_test ............................................   Passed    1.17 sec
+        Start 206: logger_test
+124/214 Test #115: trade_comm_test ............................................   Passed    1.19 sec
+        Start  89: matching_pennies_3p_test
+125/214 Test #198: python/utils/lru_cache_test.py .............................   Passed    1.21 sec
+        Start  84: lewis_signaling_test
+126/214 Test  #15: matrix_game_utils_test .....................................   Passed    1.19 sec
+        Start  73: garnet_test
+127/214 Test  #34: mcts_example_test ..........................................   Passed    1.19 sec
+        Start 203: file_test
+128/214 Test  #30: benchmark_game_test ........................................   Passed    1.17 sec
+        Start 202: data_logger_test
+129/214 Test #200: circular_buffer_test .......................................   Passed    0.96 sec
+        Start 208: random_test
+130/214 Test  #31: cfr_example_test ...........................................   Passed    0.93 sec
+        Start 114: tiny_hanabi_test
+131/214 Test   #6: deterministic_policy_test ..................................   Passed    0.91 sec
+        Start 201: combinatorics_test
+132/214 Test  #28: human_bot_test .............................................   Passed    0.92 sec
+        Start 121: add_noise_test
+133/214 Test  #33: matrix_example_test ........................................   Passed    0.86 sec
+        Start 210: stats_test
+134/214 Test   #1: best_response_test .........................................   Passed    0.85 sec
+        Start 211: tensor_view_test
+135/214 Test  #32: example_test ...............................................   Passed    0.85 sec
+136/214 Test  #29: uci_bot_test ...............................................   Passed    1.20 sec
+137/214 Test  #11: get_legal_actions_map_test .................................   Passed    1.00 sec
+138/214 Test  #10: get_all_states_test ........................................   Passed    1.54 sec
+139/214 Test   #8: external_sampling_mccfr_test ...............................   Passed   19.36 sec
+140/214 Test #212: threaded_queue_test ........................................   Passed    0.73 sec
+141/214 Test  #16: minimax_test ...............................................   Passed    0.72 sec
+142/214 Test  #17: observation_history_test ...................................   Passed    0.70 sec
+143/214 Test  #20: state_distribution_test ....................................   Passed    0.67 sec
+144/214 Test #205: json_test ..................................................   Passed    0.64 sec
+145/214 Test #214: action_view_test ...........................................   Passed    0.61 sec
+146/214 Test  #56: coordinated_mp_test ........................................   Passed    0.60 sec
+147/214 Test  #58: crowd_modelling_test .......................................   Passed    0.59 sec
+148/214 Test  #59: crowd_modelling_2d_test ....................................   Passed    0.58 sec
+149/214 Test  #62: dark_hex_test ..............................................   Passed    0.57 sec
+150/214 Test  #93: nfg_game_test ..............................................   Passed    0.56 sec
+151/214 Test  #67: dynamic_routing_utils_test .................................   Passed    0.55 sec
+152/214 Test  #65: dynamic_routing_data_test ..................................   Passed    0.51 sec
+153/214 Test  #66: dynamic_routing_test .......................................   Passed    0.48 sec
+154/214 Test  #69: dou_dizhu_utils_test .......................................   Passed    0.46 sec
+155/214 Test #207: lru_cache_test .............................................   Passed    0.45 sec
+156/214 Test #206: logger_test ................................................   Passed    0.44 sec
+157/214 Test  #89: matching_pennies_3p_test ...................................   Passed    0.45 sec
+158/214 Test  #84: lewis_signaling_test .......................................   Passed    0.42 sec
+159/214 Test  #73: garnet_test ................................................   Passed    0.40 sec
+160/214 Test #203: file_test ..................................................   Passed    0.39 sec
+161/214 Test #202: data_logger_test ...........................................   Passed    0.36 sec
+162/214 Test #208: random_test ................................................   Passed    0.33 sec
+163/214 Test #114: tiny_hanabi_test ...........................................   Passed    0.31 sec
+164/214 Test #201: combinatorics_test .........................................   Passed    0.30 sec
+165/214 Test #210: stats_test .................................................   Passed    0.26 sec
+166/214 Test #121: add_noise_test .............................................   Passed    0.50 sec
+167/214 Test #211: tensor_view_test ...........................................   Passed    0.49 sec
+168/214 Test   #3: cfr_br_test ................................................   Passed   19.75 sec
+169/214 Test  #49: chess_test .................................................   Passed   19.98 sec
+170/214 Test #145: python/algorithms/mcts_test.py .............................   Passed   21.49 sec
+171/214 Test   #2: cfr_test ...................................................   Passed   21.74 sec
+172/214 Test #213: spiel_test .................................................   Passed   21.70 sec
+173/214 Test #105: rbc_test ...................................................   Passed   22.32 sec
+174/214 Test #193: python/tests/pyspiel_test.py ...............................   Passed   22.65 sec
+175/214 Test #142: python/algorithms/get_all_states_test.py ...................   Passed   23.87 sec
+176/214 Test #156: python/algorithms/sequence_form_utils_test.py ..............   Passed   24.56 sec
+177/214 Test  #26: trajectories_test ..........................................   Passed   24.73 sec
+178/214 Test #192: python/tests/policy_test.py ................................   Passed   24.82 sec
+179/214 Test  #42: battleship_test ............................................   Passed   25.40 sec
+180/214 Test #100: pathfinding_test ...........................................   Passed   25.39 sec
+181/214 Test #191: python/tests/games_sim_test.py .............................   Passed   25.65 sec
+182/214 Test #169: python/games/chat_game_test.py .............................   Passed   26.01 sec
+183/214 Test  #95: nine_mens_morris_test ......................................   Passed   26.70 sec
+184/214 Test  #40: backgammon_test ............................................   Passed   27.30 sec
+185/214 Test #183: python/mfg/games/dynamic_routing_test.py ...................   Passed   27.50 sec
+186/214 Test #134: python/algorithms/cfr_br_test.py ...........................   Passed   27.84 sec
+187/214 Test  #88: markov_soccer_test .........................................   Passed   28.11 sec
+188/214 Test  #21: tabular_best_response_mdp_test .............................   Passed   28.23 sec
+189/214 Test  #38: 2048_test ..................................................   Passed   28.58 sec
+190/214 Test  #55: coop_box_pushing_test ......................................   Passed   28.87 sec
+191/214 Test #152: python/algorithms/projected_replicator_dynamics_test.py ....   Passed   29.09 sec
+192/214 Test #108: solitaire_test .............................................   Passed   29.13 sec
+193/214 Test #139: python/algorithms/fictitious_play_test.py ..................   Passed   29.16 sec
+194/214 Test  #48: checkers_test ..............................................   Passed   29.41 sec
+195/214 Test #109: stones_and_gems_test .......................................   Passed   29.83 sec
+196/214 Test  #78: havannah_test ..............................................   Passed   30.73 sec
+197/214 Test #103: pig_test ...................................................   Passed   31.18 sec
+198/214 Test #195: python/tests/sampled_stochastic_games_test.py ..............   Passed   31.48 sec
+199/214 Test #104: quoridor_test ..............................................   Passed   31.87 sec
+200/214 Test  #57: crazy_eights_test ..........................................   Passed   32.56 sec
+201/214 Test #117: y_test .....................................................   Passed   32.96 sec
+202/214 Test #154: python/algorithms/regret_matching_test.py ..................   Passed   33.52 sec
+203/214 Test #151: python/algorithms/policy_aggregator_test.py ................   Passed   35.39 sec
+204/214 Test #172: python/games/dynamic_routing_test.py .......................   Passed   38.12 sec
+205/214 Test #135: python/algorithms/cfr_test.py ..............................   Passed   39.46 sec
+206/214 Test #155: python/algorithms/tabular_qlearner_test.py .................   Passed   40.46 sec
+207/214 Test #133: python/algorithms/boltzmann_tabular_qlearner_test.py .......   Passed   41.99 sec
+208/214 Test #149: python/algorithms/outcome_sampling_mccfr_test.py ...........   Passed   42.04 sec
+209/214 Test #184: python/tests/mfg_implementation_test/mfg_test.py ...........   Passed   42.85 sec
+210/214 Test #132: python/algorithms/best_response_test.py ....................   Passed   44.65 sec
+211/214 Test  #86: maedn_test .................................................   Passed   53.75 sec
+212/214 Test #112: laser_tag_test .............................................   Passed   58.74 sec
+213/214 Test #128: python/../integration_tests/api_test.py ....................   Passed   59.53 sec
+214/214 Test #129: python/../integration_tests/playthrough_test.py ............***Failed   60.69 sec
+Running tests under Python 3.8.10: /home/jin/code/open_spiel_forked/venv/bin/python3.8
+[ RUN      ] PlaythroughTest.test_all_games_tested
+[  FAILED  ] PlaythroughTest.test_all_games_tested
+[ RUN      ] PlaythroughTest.test_playthrough_2048.txt
+[       OK ] PlaythroughTest.test_playthrough_2048.txt
+[ RUN      ] PlaythroughTest.test_playthrough_add_noise(epsilon=1.,seed=1,game=kuhn_poker()).txt
+[       OK ] PlaythroughTest.test_playthrough_add_noise(epsilon=1.,seed=1,game=kuhn_poker()).txt
+[ RUN      ] PlaythroughTest.test_playthrough_amazons.txt
+[       OK ] PlaythroughTest.test_playthrough_amazons.txt
+[ RUN      ] PlaythroughTest.test_playthrough_backgammon(hyper_backgammon=true).txt
+[       OK ] PlaythroughTest.test_playthrough_backgammon(hyper_backgammon=true).txt
+[ RUN      ] PlaythroughTest.test_playthrough_backgammon.txt
+[       OK ] PlaythroughTest.test_playthrough_backgammon.txt
+[ RUN      ] PlaythroughTest.test_playthrough_bargaining.txt
+[       OK ] PlaythroughTest.test_playthrough_bargaining.txt
+[ RUN      ] PlaythroughTest.test_playthrough_battleship.txt
+[       OK ] PlaythroughTest.test_playthrough_battleship.txt
+[ RUN      ] PlaythroughTest.test_playthrough_blackjack.txt
+[       OK ] PlaythroughTest.test_playthrough_blackjack.txt
+[ RUN      ] PlaythroughTest.test_playthrough_blotto.txt
+[       OK ] PlaythroughTest.test_playthrough_blotto.txt
+[ RUN      ] PlaythroughTest.test_playthrough_breakthrough.txt
+[       OK ] PlaythroughTest.test_playthrough_breakthrough.txt
+[ RUN      ] PlaythroughTest.test_playthrough_bridge(use_double_dummy_result=false).txt
+[       OK ] PlaythroughTest.test_playthrough_bridge(use_double_dummy_result=false).txt
+[ RUN      ] PlaythroughTest.test_playthrough_bridge.txt
+[       OK ] PlaythroughTest.test_playthrough_bridge.txt
+[ RUN      ] PlaythroughTest.test_playthrough_bridge_uncontested_bidding-2NT.txt
+[       OK ] PlaythroughTest.test_playthrough_bridge_uncontested_bidding-2NT.txt
+[ RUN      ] PlaythroughTest.test_playthrough_bridge_uncontested_bidding.txt
+[       OK ] PlaythroughTest.test_playthrough_bridge_uncontested_bidding.txt
+[ RUN      ] PlaythroughTest.test_playthrough_catch.txt
+[       OK ] PlaythroughTest.test_playthrough_catch.txt
+[ RUN      ] PlaythroughTest.test_playthrough_chat_game.txt
+W1125 17:13:11.256301 139622821082944 chat_game.py:274] Loading chat_game with default config. Only meant for open_spiel testing.
+I1125 17:13:11.723661 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:11.723803 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.723970 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.724089 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:11.724156 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.724235 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.724322 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:11.724385 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.724458 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.724543 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:11.724603 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.724694 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.724780 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:11.724841 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.724914 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.725125 139622821082944 chat_game_base.py:661] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:11.725194 139622821082944 chat_game_base.py:664] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.725272 139622821082944 chat_game_base.py:670] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.725337 139622821082944 chat_game_base.py:675] [35mObservation (speaker=0:Bob):
+
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.725395 139622821082944 chat_game_base.py:679] [35mVectorizing observation...[0m
+I1125 17:13:11.725530 139622821082944 chat_game_base.py:681] [35mVectorized observation (speaker=0:Bob):
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0][0m
+I1125 17:13:11.726624 139622821082944 chat_game_base.py:661] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:11.726701 139622821082944 chat_game_base.py:664] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:11.726783 139622821082944 chat_game_base.py:670] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.726849 139622821082944 chat_game_base.py:675] [35mObservation (speaker=1:Suzy):
+
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:11.726909 139622821082944 chat_game_base.py:679] [35mVectorizing observation...[0m
+I1125 17:13:11.727050 139622821082944 chat_game_base.py:681] [35mVectorized observation (speaker=1:Suzy):
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0][0m
+I1125 17:13:12.276663 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.276823 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.276928 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.277025 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:12.277087 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.277160 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.277241 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.277300 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.277370 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.277449 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.277507 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.277576 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.277653 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:12.277709 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.277776 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.277988 139622821082944 chat_game_base.py:661] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.278056 139622821082944 chat_game_base.py:664] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.278131 139622821082944 chat_game_base.py:670] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.278192 139622821082944 chat_game_base.py:675] [35mObservation (speaker=0:Bob):
+
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.278247 139622821082944 chat_game_base.py:679] [35mVectorizing observation...[0m
+I1125 17:13:12.278398 139622821082944 chat_game_base.py:681] [35mVectorized observation (speaker=0:Bob):
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0][0m
+I1125 17:13:12.279483 139622821082944 chat_game_base.py:661] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:12.279557 139622821082944 chat_game_base.py:664] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.279635 139622821082944 chat_game_base.py:670] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.279697 139622821082944 chat_game_base.py:675] [35mObservation (speaker=1:Suzy):
+
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.279752 139622821082944 chat_game_base.py:679] [35mVectorizing observation...[0m
+I1125 17:13:12.279873 139622821082944 chat_game_base.py:681] [35mVectorized observation (speaker=1:Suzy):
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0][0m
+I1125 17:13:12.792182 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.792333 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.792440 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.792538 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:12.792601 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.792688 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.792798 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.792859 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.792935 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.793017 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.793076 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.793147 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.793231 139622821082944 chat_game_base.py:705] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:12.793290 139622821082944 chat_game_base.py:708] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.793363 139622821082944 chat_game_base.py:714] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.793567 139622821082944 chat_game_base.py:661] [35mGenerating observation (speaker=0:Bob)...[0m
+I1125 17:13:12.793637 139622821082944 chat_game_base.py:664] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.793736 139622821082944 chat_game_base.py:670] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.793802 139622821082944 chat_game_base.py:675] [35mObservation (speaker=0:Bob):
+
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.793861 139622821082944 chat_game_base.py:679] [35mVectorizing observation...[0m
+I1125 17:13:12.794008 139622821082944 chat_game_base.py:681] [35mVectorized observation (speaker=0:Bob):
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0][0m
+I1125 17:13:12.795104 139622821082944 chat_game_base.py:661] [35mGenerating observation (speaker=1:Suzy)...[0m
+I1125 17:13:12.795181 139622821082944 chat_game_base.py:664] [35mLLM prompt:
+You are an assistant designed to summarize conversational dialogue.
+Please take note of the most import events in the conversation.
+Especially take note if the final message includes a question. Provide
+your summary in 100 words or less. Please summarize the following
+dialogue.
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+Summary:
+[0m
+I1125 17:13:12.795264 139622821082944 chat_game_base.py:670] [35mLLM response:
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.795327 139622821082944 chat_game_base.py:675] [35mObservation (speaker=1:Suzy):
+
+This is a summary of the dialogue. We are happy.
+[0m
+I1125 17:13:12.795386 139622821082944 chat_game_base.py:679] [35mVectorizing observation...[0m
+I1125 17:13:12.795513 139622821082944 chat_game_base.py:681] [35mVectorized observation (speaker=1:Suzy):
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0][0m
+I1125 17:13:12.796577 139622821082944 chat_game_base.py:408] [32mCalculating payoff 0 (player=0:Bob)...[0m
+I1125 17:13:12.796661 139622821082944 chat_game_base.py:410] [32mLLM prompt:
+You are an assistant designed to analyze sentiment from speech data.
+Users will paste in a string of text and you will respond with an
+assessment of the response of the speaker. Rate on a scale of 1-10 (10
+being highest). Explain why this rating was given. Here are a few
+examples.
+
+####################
+
+message: Hi Bob, I am sorry you think the rent increase is unfair, but
+the economy has forced my hand. If I cannot afford it, you will have
+to leave.
+
+sentiment_score for Bob: 3/10.
+
+message: Hi Bob, you are right. The rent is expensive and it is not
+fair_to raise it that high. I will compromise and only raise it by 3
+percent.
+
+sentiment_score for Bob: 7/10.
+
+message: Hi Alice, I think that rent increase is really unfair. I
+think you are trying to take advantage of me and I do not appreciate
+it.
+
+sentiment_score for Alice: 3/10.
+
+message: Hi Alice, the rent is expensive but it is worth it and I am
+willing to pay you a higher rent.
+
+sentiment_score for Alice: 8/10.
+
+####################
+
+Now provide a rating for the following message.
+
+message: Bob
+
+
+Suzy
+
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+sentiment score for Bob:[0m
+I1125 17:13:12.796772 139622821082944 chat_game_base.py:416] [32mLLM response:
+5
+[0m
+I1125 17:13:12.796839 139622821082944 chat_game_base.py:418] [32mExtracting payoff 0 (player=0:Bob)...[0m
+I1125 17:13:12.796901 139622821082944 chat_game_base.py:424] [32mLLM prompt:
+Extract out the final value for Bob as a single numeric value from the following payoff valuation. Do NOT show your work:
+
+5
+
+
+Result: [0m
+I1125 17:13:12.796975 139622821082944 chat_game_base.py:430] [32mLLM response:
+5
+[0m
+I1125 17:13:12.797050 139622821082944 chat_game_base.py:440] [32mExtracted integer payoff (Bob): 5[0m
+I1125 17:13:12.797121 139622821082944 chat_game_base.py:408] [32mCalculating payoff 1 (player=0:Bob)...[0m
+I1125 17:13:12.797178 139622821082944 chat_game_base.py:410] [32mLLM prompt:
+You are an assistant designed to analyze sentiment from speech data.
+Users will paste in a string of text and you will respond with an
+assessment of the response of the speaker. Rate on a scale of 1-10 (10
+being highest). Explain why this rating was given. Here are a few
+examples.
+
+####################
+
+message: Hi Bob, I am sorry you think the rent increase is unfair, but
+the economy has forced my hand. If I cannot afford it, you will have
+to leave.
+
+sentiment_score for Bob: 3/10.
+
+message: Hi Bob, you are right. The rent is expensive and it is not
+fair_to raise it that high. I will compromise and only raise it by 3
+percent.
+
+sentiment_score for Bob: 7/10.
+
+message: Hi Alice, I think that rent increase is really unfair. I
+think you are trying to take advantage of me and I do not appreciate
+it.
+
+sentiment_score for Alice: 3/10.
+
+message: Hi Alice, the rent is expensive but it is worth it and I am
+willing to pay you a higher rent.
+
+sentiment_score for Alice: 8/10.
+
+####################
+
+Now provide a rating for the following message.
+
+message: Bob
+
+
+Suzy
+
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+sentiment score for Bob:[0m
+I1125 17:13:12.797255 139622821082944 chat_game_base.py:416] [32mLLM response:
+5
+[0m
+I1125 17:13:12.797315 139622821082944 chat_game_base.py:418] [32mExtracting payoff 1 (player=0:Bob)...[0m
+I1125 17:13:12.797371 139622821082944 chat_game_base.py:424] [32mLLM prompt:
+Extract out the final value for Bob as a single numeric value from the following payoff valuation. Do NOT show your work:
+
+5
+
+
+Result: [0m
+I1125 17:13:12.797436 139622821082944 chat_game_base.py:430] [32mLLM response:
+5
+[0m
+I1125 17:13:12.797504 139622821082944 chat_game_base.py:440] [32mExtracted integer payoff (Bob): 5[0m
+I1125 17:13:12.797626 139622821082944 chat_game_base.py:408] [32mCalculating payoff 0 (player=1:Suzy)...[0m
+I1125 17:13:12.797707 139622821082944 chat_game_base.py:410] [32mLLM prompt:
+You are an assistant designed to analyze sentiment from speech data.
+Users will paste in a string of text and you will respond with an
+assessment of the response of the speaker. Rate on a scale of 1-10 (10
+being highest). Explain why this rating was given. Here are a few
+examples.
+
+####################
+
+message: Hi Bob, I am sorry you think the rent increase is unfair, but
+the economy has forced my hand. If I cannot afford it, you will have
+to leave.
+
+sentiment_score for Bob: 3/10.
+
+message: Hi Bob, you are right. The rent is expensive and it is not
+fair_to raise it that high. I will compromise and only raise it by 3
+percent.
+
+sentiment_score for Bob: 7/10.
+
+message: Hi Alice, I think that rent increase is really unfair. I
+think you are trying to take advantage of me and I do not appreciate
+it.
+
+sentiment_score for Alice: 3/10.
+
+message: Hi Alice, the rent is expensive but it is worth it and I am
+willing to pay you a higher rent.
+
+sentiment_score for Alice: 8/10.
+
+####################
+
+Now provide a rating for the following message.
+
+message: Bob
+
+
+Suzy
+
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+sentiment score for Suzy:[0m
+I1125 17:13:12.797788 139622821082944 chat_game_base.py:416] [32mLLM response:
+5
+[0m
+I1125 17:13:12.797850 139622821082944 chat_game_base.py:418] [32mExtracting payoff 0 (player=1:Suzy)...[0m
+I1125 17:13:12.797906 139622821082944 chat_game_base.py:424] [32mLLM prompt:
+Extract out the final value for Suzy as a single numeric value from the following payoff valuation. Do NOT show your work:
+
+5
+
+
+Result: [0m
+I1125 17:13:12.797972 139622821082944 chat_game_base.py:430] [32mLLM response:
+5
+[0m
+I1125 17:13:12.798040 139622821082944 chat_game_base.py:440] [32mExtracted integer payoff (Suzy): 5[0m
+I1125 17:13:12.798101 139622821082944 chat_game_base.py:408] [32mCalculating payoff 1 (player=1:Suzy)...[0m
+I1125 17:13:12.798156 139622821082944 chat_game_base.py:410] [32mLLM prompt:
+You are an assistant designed to analyze sentiment from speech data.
+Users will paste in a string of text and you will respond with an
+assessment of the response of the speaker. Rate on a scale of 1-10 (10
+being highest). Explain why this rating was given. Here are a few
+examples.
+
+####################
+
+message: Hi Bob, I am sorry you think the rent increase is unfair, but
+the economy has forced my hand. If I cannot afford it, you will have
+to leave.
+
+sentiment_score for Bob: 3/10.
+
+message: Hi Bob, you are right. The rent is expensive and it is not
+fair_to raise it that high. I will compromise and only raise it by 3
+percent.
+
+sentiment_score for Bob: 7/10.
+
+message: Hi Alice, I think that rent increase is really unfair. I
+think you are trying to take advantage of me and I do not appreciate
+it.
+
+sentiment_score for Alice: 3/10.
+
+message: Hi Alice, the rent is expensive but it is worth it and I am
+willing to pay you a higher rent.
+
+sentiment_score for Alice: 8/10.
+
+####################
+
+Now provide a rating for the following message.
+
+message: Bob
+
+
+Suzy
+
+
+
+
+############################
+Email:
+from: Bob
+to: Suzy
+cc: Everyone
+############################
+
+Hi Suzy,
+
+I hope you are well,
+
+Best,
+
+Bob
+
+sentiment score for Suzy:[0m
+I1125 17:13:12.798233 139622821082944 chat_game_base.py:416] [32mLLM response:
+5
+[0m
+I1125 17:13:12.798291 139622821082944 chat_game_base.py:418] [32mExtracting payoff 1 (player=1:Suzy)...[0m
+I1125 17:13:12.798346 139622821082944 chat_game_base.py:424] [32mLLM prompt:
+Extract out the final value for Suzy as a single numeric value from the following payoff valuation. Do NOT show your work:
+
+5
+
+
+Result: [0m
+I1125 17:13:12.798412 139622821082944 chat_game_base.py:430] [32mLLM response:
+5
+[0m
+I1125 17:13:12.798479 139622821082944 chat_game_base.py:440] [32mExtracted integer payoff (Suzy): 5[0m
+[       OK ] PlaythroughTest.test_playthrough_chat_game.txt
+[ RUN      ] PlaythroughTest.test_playthrough_checkers.txt
+[       OK ] PlaythroughTest.test_playthrough_checkers.txt
+[ RUN      ] PlaythroughTest.test_playthrough_chess.txt
+[       OK ] PlaythroughTest.test_playthrough_chess.txt
+[ RUN      ] PlaythroughTest.test_playthrough_cliff_walking.txt
+[       OK ] PlaythroughTest.test_playthrough_cliff_walking.txt
+[ RUN      ] PlaythroughTest.test_playthrough_clobber.txt
+[       OK ] PlaythroughTest.test_playthrough_clobber.txt
+[ RUN      ] PlaythroughTest.test_playthrough_coin_game.txt
+[       OK ] PlaythroughTest.test_playthrough_coin_game.txt
+[ RUN      ] PlaythroughTest.test_playthrough_colored_trails.txt
+[       OK ] PlaythroughTest.test_playthrough_colored_trails.txt
+[ RUN      ] PlaythroughTest.test_playthrough_connect_four.txt
+[       OK ] PlaythroughTest.test_playthrough_connect_four.txt
+[ RUN      ] PlaythroughTest.test_playthrough_connect_four_start_at.txt
+[       OK ] PlaythroughTest.test_playthrough_connect_four_start_at.txt
+[ RUN      ] PlaythroughTest.test_playthrough_coop_box_pushing.txt
+[       OK ] PlaythroughTest.test_playthrough_coop_box_pushing.txt
+[ RUN      ] PlaythroughTest.test_playthrough_coop_to_1p(game=tiny_bridge_2p()).txt
+[       OK ] PlaythroughTest.test_playthrough_coop_to_1p(game=tiny_bridge_2p()).txt
+[ RUN      ] PlaythroughTest.test_playthrough_coop_to_1p(game=tiny_hanabi()).txt
+[       OK ] PlaythroughTest.test_playthrough_coop_to_1p(game=tiny_hanabi()).txt
+[ RUN      ] PlaythroughTest.test_playthrough_coordinated_mp.txt
+[       OK ] PlaythroughTest.test_playthrough_coordinated_mp.txt
+[ RUN      ] PlaythroughTest.test_playthrough_crazy_eights.txt
+[       OK ] PlaythroughTest.test_playthrough_crazy_eights.txt
+[ RUN      ] PlaythroughTest.test_playthrough_cursor_go(board_size=5,max_cursor_moves=7).txt
+[       OK ] PlaythroughTest.test_playthrough_cursor_go(board_size=5,max_cursor_moves=7).txt
+[ RUN      ] PlaythroughTest.test_playthrough_dark_chess(board_size=4).txt
+[       OK ] PlaythroughTest.test_playthrough_dark_chess(board_size=4).txt
+[ RUN      ] PlaythroughTest.test_playthrough_dark_chess.txt
+[       OK ] PlaythroughTest.test_playthrough_dark_chess.txt
+[ RUN      ] PlaythroughTest.test_playthrough_dark_hex(num_rows=5,num_cols=3).txt
+[       OK ] PlaythroughTest.test_playthrough_dark_hex(num_rows=5,num_cols=3).txt
+[ RUN      ] PlaythroughTest.test_playthrough_dark_hex_ir(board_size=3).txt
+[       OK ] PlaythroughTest.test_playthrough_dark_hex_ir(board_size=3).txt
+[ RUN      ] PlaythroughTest.test_playthrough_dark_hex_reveal_turn_long.txt
+[       OK ] PlaythroughTest.test_playthrough_dark_hex_reveal_turn_long.txt
+[ RUN      ] PlaythroughTest.test_playthrough_deep_sea.txt
+[       OK ] PlaythroughTest.test_playthrough_deep_sea.txt
+[ RUN      ] PlaythroughTest.test_playthrough_dots_and_boxes.txt
+[       OK ] PlaythroughTest.test_playthrough_dots_and_boxes.txt
+[ RUN      ] PlaythroughTest.test_playthrough_dou_dizhu.txt
+[       OK ] PlaythroughTest.test_playthrough_dou_dizhu.txt
+[ RUN      ] PlaythroughTest.test_playthrough_euchre.txt
+[       OK ] PlaythroughTest.test_playthrough_euchre.txt
+[ RUN      ] PlaythroughTest.test_playthrough_first_sealed_auction.txt
+[       OK ] PlaythroughTest.test_playthrough_first_sealed_auction.txt
+[ RUN      ] PlaythroughTest.test_playthrough_gin_rummy.txt
+[       OK ] PlaythroughTest.test_playthrough_gin_rummy.txt
+[ RUN      ] PlaythroughTest.test_playthrough_go.txt
+[       OK ] PlaythroughTest.test_playthrough_go.txt
+[ RUN      ] PlaythroughTest.test_playthrough_goofspiel.txt
+[       OK ] PlaythroughTest.test_playthrough_goofspiel.txt
+[ RUN      ] PlaythroughTest.test_playthrough_goofspiel_egocentric.txt
+[       OK ] PlaythroughTest.test_playthrough_goofspiel_egocentric.txt
+[ RUN      ] PlaythroughTest.test_playthrough_goofspiel_random_points_order.txt
+[       OK ] PlaythroughTest.test_playthrough_goofspiel_random_points_order.txt
+[ RUN      ] PlaythroughTest.test_playthrough_goofspiel_turn_based.txt
+[       OK ] PlaythroughTest.test_playthrough_goofspiel_turn_based.txt
+[ RUN      ] PlaythroughTest.test_playthrough_hanabi.txt
+I1125 17:13:26.293294 139622821082944 playthrough_test.py:71] Skipping hanabi.txt because hanabi is not built in.
+[       OK ] PlaythroughTest.test_playthrough_hanabi.txt
+[ RUN      ] PlaythroughTest.test_playthrough_havannah(board_size=4).txt
+[       OK ] PlaythroughTest.test_playthrough_havannah(board_size=4).txt
+[ RUN      ] PlaythroughTest.test_playthrough_havannah(board_size=4,swap=True).txt
+[       OK ] PlaythroughTest.test_playthrough_havannah(board_size=4,swap=True).txt
+[ RUN      ] PlaythroughTest.test_playthrough_hearts.txt
+[       OK ] PlaythroughTest.test_playthrough_hearts.txt
+[ RUN      ] PlaythroughTest.test_playthrough_hex(board_size=5).txt
+[       OK ] PlaythroughTest.test_playthrough_hex(board_size=5).txt
+[ RUN      ] PlaythroughTest.test_playthrough_kriegspiel(board_size=4).txt
+[       OK ] PlaythroughTest.test_playthrough_kriegspiel(board_size=4).txt
+[ RUN      ] PlaythroughTest.test_playthrough_kuhn_poker_2p.txt
+[       OK ] PlaythroughTest.test_playthrough_kuhn_poker_2p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_kuhn_poker_3p.txt
+[       OK ] PlaythroughTest.test_playthrough_kuhn_poker_3p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_laser_tag(fully_obs=false,horizon=20).txt
+[       OK ] PlaythroughTest.test_playthrough_laser_tag(fully_obs=false,horizon=20).txt
+[ RUN      ] PlaythroughTest.test_playthrough_laser_tag(horizon=20).txt
+[       OK ] PlaythroughTest.test_playthrough_laser_tag(horizon=20).txt
+[ RUN      ] PlaythroughTest.test_playthrough_leduc_poker_1540482260.txt
+[       OK ] PlaythroughTest.test_playthrough_leduc_poker_1540482260.txt
+[ RUN      ] PlaythroughTest.test_playthrough_leduc_poker_3977671846.txt
+[       OK ] PlaythroughTest.test_playthrough_leduc_poker_3977671846.txt
+[ RUN      ] PlaythroughTest.test_playthrough_leduc_poker_3p.txt
+[       OK ] PlaythroughTest.test_playthrough_leduc_poker_3p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_leduc_poker_3p_single_tensor.txt
+[       OK ] PlaythroughTest.test_playthrough_leduc_poker_3p_single_tensor.txt
+[ RUN      ] PlaythroughTest.test_playthrough_leduc_poker_773740114.txt
+[       OK ] PlaythroughTest.test_playthrough_leduc_poker_773740114.txt
+[ RUN      ] PlaythroughTest.test_playthrough_lewis_signaling.txt
+[       OK ] PlaythroughTest.test_playthrough_lewis_signaling.txt
+[ RUN      ] PlaythroughTest.test_playthrough_liars_dice.txt
+[       OK ] PlaythroughTest.test_playthrough_liars_dice.txt
+[ RUN      ] PlaythroughTest.test_playthrough_liars_dice_ir.txt
+[       OK ] PlaythroughTest.test_playthrough_liars_dice_ir.txt
+[ RUN      ] PlaythroughTest.test_playthrough_maedn.txt
+[       OK ] PlaythroughTest.test_playthrough_maedn.txt
+[ RUN      ] PlaythroughTest.test_playthrough_mancala.txt
+[       OK ] PlaythroughTest.test_playthrough_mancala.txt
+[ RUN      ] PlaythroughTest.test_playthrough_markov_soccer.txt
+[       OK ] PlaythroughTest.test_playthrough_markov_soccer.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matching_pennies_3p.txt
+[       OK ] PlaythroughTest.test_playthrough_matching_pennies_3p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_bos.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_bos.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_brps.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_brps.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_cd.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_cd.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_coordination.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_coordination.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_mp.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_mp.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_pd.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_pd.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_rps.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_rps.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_rpsw.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_rpsw.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_sh.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_sh.txt
+[ RUN      ] PlaythroughTest.test_playthrough_matrix_shapleys_game.txt
+[       OK ] PlaythroughTest.test_playthrough_matrix_shapleys_game.txt
+[ RUN      ] PlaythroughTest.test_playthrough_mean_field_lin_quad.txt
+[       OK ] PlaythroughTest.test_playthrough_mean_field_lin_quad.txt
+[ RUN      ] PlaythroughTest.test_playthrough_mfg_crowd_modelling.txt
+[       OK ] PlaythroughTest.test_playthrough_mfg_crowd_modelling.txt
+[ RUN      ] PlaythroughTest.test_playthrough_mfg_crowd_modelling_2d.txt
+[       OK ] PlaythroughTest.test_playthrough_mfg_crowd_modelling_2d.txt
+[ RUN      ] PlaythroughTest.test_playthrough_mfg_dynamic_routing.txt
+[       OK ] PlaythroughTest.test_playthrough_mfg_dynamic_routing.txt
+[ RUN      ] PlaythroughTest.test_playthrough_mfg_garnet.txt
+[       OK ] PlaythroughTest.test_playthrough_mfg_garnet.txt
+[ RUN      ] PlaythroughTest.test_playthrough_misere(game=kuhn_poker()).txt
+[       OK ] PlaythroughTest.test_playthrough_misere(game=kuhn_poker()).txt
+[ RUN      ] PlaythroughTest.test_playthrough_misere(game=pig(players=3,horizon=20,winscore=6)).txt
+[       OK ] PlaythroughTest.test_playthrough_misere(game=pig(players=3,horizon=20,winscore=6)).txt
+[ RUN      ] PlaythroughTest.test_playthrough_misere(game=tic_tac_toe()).txt
+[       OK ] PlaythroughTest.test_playthrough_misere(game=tic_tac_toe()).txt
+[ RUN      ] PlaythroughTest.test_playthrough_morpion_solitaire.txt
+[       OK ] PlaythroughTest.test_playthrough_morpion_solitaire.txt
+[ RUN      ] PlaythroughTest.test_playthrough_negotiation(rng_seed=100,utterance_dim=2,num_symbols=3).txt
+[       OK ] PlaythroughTest.test_playthrough_negotiation(rng_seed=100,utterance_dim=2,num_symbols=3).txt
+[ RUN      ] PlaythroughTest.test_playthrough_nim.txt
+[       OK ] PlaythroughTest.test_playthrough_nim.txt
+[ RUN      ] PlaythroughTest.test_playthrough_nine_mens_morris.txt
+[       OK ] PlaythroughTest.test_playthrough_nine_mens_morris.txt
+[ RUN      ] PlaythroughTest.test_playthrough_normal_form_extensive_game(game=first_sealed_auction(players=3,max_value=3)).txt
+[       OK ] PlaythroughTest.test_playthrough_normal_form_extensive_game(game=first_sealed_auction(players=3,max_value=3)).txt
+[ RUN      ] PlaythroughTest.test_playthrough_oh_hell.txt
+[       OK ] PlaythroughTest.test_playthrough_oh_hell.txt
+[ RUN      ] PlaythroughTest.test_playthrough_oshi_zumo.txt
+[       OK ] PlaythroughTest.test_playthrough_oshi_zumo.txt
+[ RUN      ] PlaythroughTest.test_playthrough_othello.txt
+[       OK ] PlaythroughTest.test_playthrough_othello.txt
+[ RUN      ] PlaythroughTest.test_playthrough_oware.txt
+[       OK ] PlaythroughTest.test_playthrough_oware.txt
+[ RUN      ] PlaythroughTest.test_playthrough_pathfinding.txt
+[       OK ] PlaythroughTest.test_playthrough_pathfinding.txt
+[ RUN      ] PlaythroughTest.test_playthrough_pentago.txt
+[       OK ] PlaythroughTest.test_playthrough_pentago.txt
+[ RUN      ] PlaythroughTest.test_playthrough_phantom_go.txt
+[       OK ] PlaythroughTest.test_playthrough_phantom_go.txt
+[ RUN      ] PlaythroughTest.test_playthrough_phantom_ttt.txt
+[       OK ] PlaythroughTest.test_playthrough_phantom_ttt.txt
+[ RUN      ] PlaythroughTest.test_playthrough_phantom_ttt_ir.txt
+[       OK ] PlaythroughTest.test_playthrough_phantom_ttt_ir.txt
+[ RUN      ] PlaythroughTest.test_playthrough_pig_3p.txt
+[       OK ] PlaythroughTest.test_playthrough_pig_3p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_pig_4p.txt
+[       OK ] PlaythroughTest.test_playthrough_pig_4p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_pig_5p.txt
+[       OK ] PlaythroughTest.test_playthrough_pig_5p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_block_dominoes.txt
+[       OK ] PlaythroughTest.test_playthrough_python_block_dominoes.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_dynamic_routing.txt
+[       OK ] PlaythroughTest.test_playthrough_python_dynamic_routing.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_iterated_prisoners_dilemma.txt
+[       OK ] PlaythroughTest.test_playthrough_python_iterated_prisoners_dilemma.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_iterated_prisoners_dilemma_turn_based.txt
+[       OK ] PlaythroughTest.test_playthrough_python_iterated_prisoners_dilemma_turn_based.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_kuhn_poker.txt
+[       OK ] PlaythroughTest.test_playthrough_python_kuhn_poker.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_liars_poker.txt
+[       OK ] PlaythroughTest.test_playthrough_python_liars_poker.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_mfg_crowd_avoidance.txt
+/home/jin/code/open_spiel_forked/venv/lib/python3.8/site-packages/numpy/core/numeric.py:2468: FutureWarning: elementwise comparison failed; returning scalar instead, but in the future will perform elementwise comparison
+  return bool(asarray(a1 == a2).all())
+[       OK ] PlaythroughTest.test_playthrough_python_mfg_crowd_avoidance.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_mfg_crowd_modelling.txt
+[       OK ] PlaythroughTest.test_playthrough_python_mfg_crowd_modelling.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_mfg_dynamic_routing.txt
+[       OK ] PlaythroughTest.test_playthrough_python_mfg_dynamic_routing.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_mfg_periodic_aversion.txt
+[       OK ] PlaythroughTest.test_playthrough_python_mfg_periodic_aversion.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_mfg_predator_prey.txt
+[       OK ] PlaythroughTest.test_playthrough_python_mfg_predator_prey.txt
+[ RUN      ] PlaythroughTest.test_playthrough_python_tic_tac_toe.txt
+[       OK ] PlaythroughTest.test_playthrough_python_tic_tac_toe.txt
+[ RUN      ] PlaythroughTest.test_playthrough_quoridor(board_size=5).txt
+[       OK ] PlaythroughTest.test_playthrough_quoridor(board_size=5).txt
+[ RUN      ] PlaythroughTest.test_playthrough_quoridor(players=4).txt
+[       OK ] PlaythroughTest.test_playthrough_quoridor(players=4).txt
+[ RUN      ] PlaythroughTest.test_playthrough_rbc(board_size=4).txt
+[       OK ] PlaythroughTest.test_playthrough_rbc(board_size=4).txt
+[ RUN      ] PlaythroughTest.test_playthrough_rbc.txt
+[       OK ] PlaythroughTest.test_playthrough_rbc.txt
+[ RUN      ] PlaythroughTest.test_playthrough_repeated_game(stage_game=matrix_rps(),num_repetitions=10).txt
+[       OK ] PlaythroughTest.test_playthrough_repeated_game(stage_game=matrix_rps(),num_repetitions=10).txt
+[ RUN      ] PlaythroughTest.test_playthrough_sheriff.txt
+[       OK ] PlaythroughTest.test_playthrough_sheriff.txt
+[ RUN      ] PlaythroughTest.test_playthrough_skat.txt
+[       OK ] PlaythroughTest.test_playthrough_skat.txt
+[ RUN      ] PlaythroughTest.test_playthrough_solitaire.txt
+[       OK ] PlaythroughTest.test_playthrough_solitaire.txt
+[ RUN      ] PlaythroughTest.test_playthrough_stones_and_gems.txt
+[       OK ] PlaythroughTest.test_playthrough_stones_and_gems.txt
+[ RUN      ] PlaythroughTest.test_playthrough_tarok(players=3,rng_seed=0).txt
+[       OK ] PlaythroughTest.test_playthrough_tarok(players=3,rng_seed=0).txt
+[ RUN      ] PlaythroughTest.test_playthrough_tarok(players=4,rng_seed=0).txt
+[       OK ] PlaythroughTest.test_playthrough_tarok(players=4,rng_seed=0).txt
+[ RUN      ] PlaythroughTest.test_playthrough_tic_tac_toe.txt
+[       OK ] PlaythroughTest.test_playthrough_tic_tac_toe.txt
+[ RUN      ] PlaythroughTest.test_playthrough_tiny_bridge_2p(abstracted=true).txt
+[       OK ] PlaythroughTest.test_playthrough_tiny_bridge_2p(abstracted=true).txt
+[ RUN      ] PlaythroughTest.test_playthrough_tiny_bridge_2p.txt
+[       OK ] PlaythroughTest.test_playthrough_tiny_bridge_2p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_tiny_bridge_4p.txt
+[       OK ] PlaythroughTest.test_playthrough_tiny_bridge_4p.txt
+[ RUN      ] PlaythroughTest.test_playthrough_tiny_hanabi(2p2a2c_hard5)
+[       OK ] PlaythroughTest.test_playthrough_tiny_hanabi(2p2a2c_hard5)
+[ RUN      ] PlaythroughTest.test_playthrough_tiny_hanabi.txt
+[       OK ] PlaythroughTest.test_playthrough_tiny_hanabi.txt
+[ RUN      ] PlaythroughTest.test_playthrough_trade_comm.txt
+[       OK ] PlaythroughTest.test_playthrough_trade_comm.txt
+[ RUN      ] PlaythroughTest.test_playthrough_ultimate_tic_tac_toe.txt
+[       OK ] PlaythroughTest.test_playthrough_ultimate_tic_tac_toe.txt
+[ RUN      ] PlaythroughTest.test_playthrough_universal_poker(bettingAbstraction=fullgame).txt
+I1125 17:13:50.171469 139622821082944 playthrough_test.py:71] Skipping universal_poker(bettingAbstraction=fullgame).txt because universal_poker is not built in.
+[       OK ] PlaythroughTest.test_playthrough_universal_poker(bettingAbstraction=fullgame).txt
+[ RUN      ] PlaythroughTest.test_playthrough_universal_poker.txt
+I1125 17:13:50.171634 139622821082944 playthrough_test.py:71] Skipping universal_poker.txt because universal_poker is not built in.
+[       OK ] PlaythroughTest.test_playthrough_universal_poker.txt
+[ RUN      ] PlaythroughTest.test_playthrough_y(board_size=9).txt
+[       OK ] PlaythroughTest.test_playthrough_y(board_size=9).txt
+[ RUN      ] PlaythroughTest.test_playthrough_zerosum(game=oh_hell()).txt
+[       OK ] PlaythroughTest.test_playthrough_zerosum(game=oh_hell()).txt
+======================================================================
+FAIL: test_all_games_tested (__main__.PlaythroughTest)
+PlaythroughTest.test_all_games_tested
+Verify that every game is present in the playthroughs.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jin/code/open_spiel_forked/open_spiel/python/../integration_tests/playthrough_test.py", line 93, in test_all_games_tested
+    self.assertEmpty(
+AssertionError: {'negotiation_city'} has length of 1. : These games do not have playthroughs.Create playthroughs using generate_new_playthrough.sh
+
+----------------------------------------------------------------------
+Ran 139 tests in 58.980s
+
+FAILED (failures=1)
+
+
+99% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 214
+
+Total Test time (real) =  60.69 sec
+
+The following tests FAILED:
+	[0;31m129 - python/../integration_tests/playthrough_test.py (Failed)[0;0m
+Errors while running CTest
+[31mAt least one test failed.[0m
+If this is the first time you have run these tests, try:
+python3 -m pip install -r requirements.txt
+Note that outside a virtualenv, you will need to install the 
+system-wide matplotlib: sudo apt-get install python-matplotlib
+(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ 
