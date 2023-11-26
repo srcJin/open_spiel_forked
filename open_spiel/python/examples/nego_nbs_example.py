@@ -46,6 +46,8 @@ flags.DEFINE_string("data_file", None, "Lewis et al. '17 data set file")
 flags.DEFINE_string("instances_file", "/tmp/instances.txt",
                     "Filename for the temp instances database file.")
 
+FLAGS.data_file = "./open_spiel/python/examples/data.txt"
+
 
 class Instance(object):
   """An instance of a bargaining problem."""
