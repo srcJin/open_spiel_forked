@@ -2173,4 +2173,7 @@ If this is the first time you have run these tests, try:
 python3 -m pip install -r requirements.txt
 Note that outside a virtualenv, you will need to install the 
 system-wide matplotlib: sudo apt-get install python-matplotlib
-(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ 
+(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ ./open_spiel/scripts/build_and_run_tests.sh^C
+(base) ]0;jin@Administrator: ~/code/open_spiel_forked[01;32mjin@Administrator[00m:[01;34m~/code/open_spiel_forked[00m$ exit
+
+Script done on 2023-11-25 17:14:47-05:00 [COMMAND_EXIT_CODE="130"]
