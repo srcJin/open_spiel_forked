@@ -50,8 +50,8 @@ const GameType kGameType{
     GameType::Information::kImperfectInformation,  // 非完全信息
     GameType::Utility::kGeneralSum,   // 总和效用
     GameType::RewardModel::kTerminal,  // 终端奖励
-    /*max_num_players=*/2, // Jin: added the player numbers
-    /*min_num_players=*/2,
+    /*max_num_players=*/10, // Jin: added the player numbers
+    /*min_num_players=*/10,
     /*provides_information_state_string=*/false,
     /*provides_information_state_tensor=*/false,
     /*provides_observation_string=*/true,
@@ -127,6 +127,9 @@ bool NegotiationCityState::IsTerminal() const {
 
 // Returns 方法：计算当前状态下的回报。
 std::vector<double> NegotiationCityState::Returns() const {
+  // added for multi players
+  std::vector<double> returns(num_players_, 0.0);
+
   if (!IsTerminal() || !agreement_reached_) {
     // 若游戏未终止或未达成协议，则所有玩家回报为0。
     return std::vector<double>(num_players_, 0.0);
@@ -404,17 +407,27 @@ void NegotiationCityState::DoApplyAction(Action move_id) {
       if (enable_utterances_) {
         turn_type_ = TurnType::kUtterance;  // 如果启用了话语，设置回合类型为发言
       } else {
-        cur_player_ = 1 - cur_player_;  // 否则，切换到下一个玩家
+        // cur_player_ = 1 - cur_player_;  // 否则，切换到下一个玩家
+        cur_player_ = (cur_player_ + 1) % num_players_;  // Added: Move to the next player.
+        // cur_player_ = 3;  // Added: Move to the next player.
+
+        // Output the current player.
+        std::cout << "Current player after proposal: " << cur_player_ << std::endl;
       }
     } else {
       SPIEL_CHECK_TRUE(enable_utterances_);
       std::vector<int> utterance = DecodeUtterance(move_id);  // 解码发言
       utterances_.push_back(utterance);  // 添加发言到发言列表
       turn_type_ = TurnType::kProposal;  // 设置回合类型为提案
-      cur_player_ = 1 - cur_player_;  // 切换到下一个玩家
+      // cur_player_ = 1 - cur_player_;  // 切换到下一个玩家
+      cur_player_ = (cur_player_ + 1) % num_players_;  // Added: Move to the next player.
+      // cur_player_ = 4;
+      // Output the current player.
+      std::cout << "Current player after utterance: " << cur_player_ << std::endl;
     }
   }
 }
+
 
 // NextProposal 方法：生成下一个提案。
 bool NegotiationCityState::NextProposal(std::vector<int>* proposal) const {
@@ -548,7 +561,7 @@ std::string NegotiationCityState::ToString() const {
   std::string str = absl::StrCat("Max steps: ", max_steps_, "\n");
   absl::StrAppend(&str, "Item pool: ", absl::StrJoin(item_pool_, " "), "\n");
 
-  // 添加每位玩家的效用向量信息。
+  // 添加每位玩家的效用向量信息。// TODO 这里只有两个 0和1
   if (!agent_utils_.empty()) {
     for (int i = 0; i < num_players_; ++i) {
       absl::StrAppend(&str, "Agent ", i, " util vec: ", absl::StrJoin(agent_utils_[i], " "), "\n");
@@ -556,12 +569,14 @@ std::string NegotiationCityState::ToString() const {
   }
 
   // 添加当前玩家和回合类型信息。
-  absl::StrAppend(&str, "Current player: ", cur_player_, "\n");
+  absl::StrAppend(&str, "Current player001: ", cur_player_, "\n");
   absl::StrAppend(&str, "Turn Type: ", TurnTypeToString(turn_type_), "\n");
 
   // 添加每个玩家的提案和发言信息。
   for (int i = 0; i < proposals_.size(); ++i) {
-    absl::StrAppend(&str, "Player ", i % 2, " proposes: [", absl::StrJoin(proposals_[i], ", "), "]");
+    // absl::StrAppend(&str, "Player ", i % 2, " proposes: [", absl::StrJoin(proposals_[i], ", "), "]");
+    absl::StrAppend(&str, "Player ", i % num_players_, " proposes: [", absl::StrJoin(proposals_[i], ", "), "]");
+
     if (enable_utterances_ && i < utterances_.size()) {
       absl::StrAppend(&str, " utters: [", absl::StrJoin(utterances_[i], ", "), "]");
     }
